@@ -18,9 +18,34 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview menu-open">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cubes"></i> <span>Items Management</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-users"></i> <span>Users Management</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-exchange"></i> <span>Transaction</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-book"></i> <span>Report</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cogs"></i> <span>Setting</span>
           </a>
         </li>
         
@@ -29,6 +54,5 @@
         
         
       </ul>
-    </section>
     <!-- /.sidebar -->
   </aside>
