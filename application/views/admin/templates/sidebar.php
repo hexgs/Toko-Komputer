@@ -26,13 +26,13 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
-          <a href="#">
+          <a href="<?php base_url() ?>">
             <i class="fa fa-dashboard"></i> 
             <span>Dashboard</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="<?php base_url() ?>item">
             <i class="fa fa-cubes"></i> 
             <span>Item Management</span>
           </a>
