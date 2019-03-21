@@ -10,25 +10,28 @@
                 <thead>
                 <tr>
                   <th>No</th>
-                  <th>Nama </th>
+                  <th>Nama</th>
                   <th>Email</th>
                   <th>Telepon</th>
                 </tr>
                 </thead>
                 <tbody>
+                <?php $nomor = 1; ?>
+                <?php foreach($user as $pelanggan): ?>
                 <tr>
-                  <td>1</td>
-                  <td>asd</td>
-                  <td>asds@gmail.com</td>
-                  <td>54656877689</td>
+                  <td><?php echo $nomor ?></td>
+                  <td><?php echo $pelanggan['nama_pelanggan'] ?></td>
+                  <td><?php echo $pelanggan['email_pelanggan'] ?></td>
+                  <td><?php echo $pelanggan['telepon'] ?></td>
+                  <td>
+                      <a href="#" class="btn btn-primary">Detail</a>
+                      <a href="#" class="btn btn-warning">Ubah</a>
+                      <a href="#" class="btn btn-danger">Hapus</a>
+                  </td>
                 </tr>
-                <tr>
-                  <td>2</td>
-                  <td>refre</td>
-                  <td>eress@gmail.com</td>
-                  <td>54656877689</td>
-                </tr>
-                </tfoot>
+                <?php $nomor++; ?>
+                <?php endforeach; ?>
+                </tbody>
               </table>
             </div>
           </div>
