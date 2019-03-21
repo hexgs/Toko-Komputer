@@ -5,12 +5,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Item_model extends CI_Model {
 
-    $query = $this->db->get('produk');
-    
-    
-    $query->result_array();
-        
-    
+    public function getAllItem(){
+
+        $query = $this->db->get('produk');
+            
+        return $query->result_array();
+
+    } 
 
 }
 
