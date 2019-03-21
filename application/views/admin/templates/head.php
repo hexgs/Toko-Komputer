@@ -10,7 +10,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= base_url('assets/back/') ?>bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Datatables -->
-  <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="<?= base_url('assets/back/') ?>bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="<?= base_url('assets/back/') ?>bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->

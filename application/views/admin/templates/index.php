@@ -19,7 +19,7 @@
     <section class="content-header">
       <h1>
         Dashboard
-        <small>Control panel</small>
+        <!-- <small>Control panel</small> -->
       </h1>
       
     </section>
