@@ -35,8 +35,8 @@
             <span>Transaction</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
+        <li class="">
+          <a href="<?php site_url() ?>user">
             <i class="fa fa-users"></i> 
             <span>User Management</span>
           </a>
