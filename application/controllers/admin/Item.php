@@ -6,7 +6,8 @@ class Item extends CI_Controller {
 
     public function index()
     {
-        $data['judul'] = 'Item - Page';
+        $data['title'] = 'Item - Page';
+        $data['judul'] = 'Item';
         $data['content'] = 'admin/item';
         $this->load->view('admin/templates/index',$data);
         
