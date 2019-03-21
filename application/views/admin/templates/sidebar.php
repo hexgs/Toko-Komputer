@@ -25,14 +25,14 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="treeview">
-          <a href="<?php base_url() ?>">
+        <li class="">
+          <a href="<?php site_url() ?>home">
             <i class="fa fa-dashboard"></i> 
             <span>Dashboard</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="<?php base_url() ?>item">
+        <li class="">
+          <a href="<?php site_url() ?>item">
             <i class="fa fa-cubes"></i> 
             <span>Item Management</span>
           </a>
