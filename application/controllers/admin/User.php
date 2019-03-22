@@ -11,6 +11,7 @@ class User extends CI_Controller {
     public function index()
     {
         $data['judul'] = 'User - Page';
+        $data['title'] = 'User - Page';
         $data['user'] = $this->User_model->getAllUser();
         $data['content'] = 'admin/user';
         $this->load->view('admin/templates/index',$data);
