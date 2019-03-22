@@ -1,17 +1,17 @@
-<?php   
+<?php 
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Item extends CI_Controller {
+class Item extends CI_Controller
+{
 
-    
+
     public function __construct()
     {
         parent::__construct();
         $this->load->model('Item_model');
-        
     }
-    
+
 
     public function index()
     {
@@ -19,12 +19,12 @@ class Item extends CI_Controller {
         $data['title'] = 'Item - Page';
         $data['judul'] = 'Item';
         $data['content'] = 'admin/item';
-        $this->load->view('admin/templates/index',$data);
-        
+        $this->load->view('admin/templates/index', $data);
     }
 
+    public function tambah()
+    { }
 }
 
 /* End of file Item.php */
-
-?>
+ 
