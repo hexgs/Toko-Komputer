@@ -24,7 +24,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="<?php site_url() ?>admin/item">
+                <a href="<?= base_url() ?>admin/item">
                     <i class="fa fa-cubes"></i>
                     <span>Item Management</span>
                 </a>

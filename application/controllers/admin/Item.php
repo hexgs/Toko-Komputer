@@ -23,7 +23,22 @@ class Item extends CI_Controller
     }
 
     public function tambah()
-    { }
+    {
+        //$data['item'] = $this->Item_model->getAllItem();
+        $data['title'] = 'Item - Page';
+        $data['judul'] = 'Item';
+        $data['content'] = 'admin/tambah';
+        $this->load->view('admin/templates/index', $data);
+        if($this->Item_model->tambahData($_POST) > 0){
+            // redirect(base_url('admin/item'));
+            exit;
+        }        
+    }
+
+    // public function hapus()
+    // {
+    //     if
+    // }
 }
 
 /* End of file Item.php */

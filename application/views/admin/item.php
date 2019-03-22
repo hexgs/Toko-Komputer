@@ -5,7 +5,65 @@
                 <h3 class="box-title">Item List</h3>
             </div>
             <div class="container">
-                <a href="<?php base_url('') ?>admin/item/tambah" class="btn btn-primary">Tambah Item</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal"> Tambah Item </button>
+                <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="judulModal"> Tambah Item </h3>
+
+                            </div>
+                            <div class="modal-body">
+                                <form action="<?= base_url(); ?>admin/item/tambah" method="post">
+                                    <div class="form-group">
+                                        <label for="id_kategori">Kategori Produk</label>
+                                        <select class="form-control" id="id_kategori" name="id_kategori">
+                                            <option value="1">Laptop</option>
+                                            <option value="2">Monitor</option>
+                                            <option value="3">RAM</option>
+                                            <option value="4">. . .</option>
+                                            <option value="5">. . .</option>
+                                            <option value="6">. . .</option>
+                                            <option value="7">. . .</option>
+                                            <option value="8">. . .</option>
+                                            <option value="9">. . .</option>
+                                            <option value="10">. . .</option>
+                                            <option value="11">. . .</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama_produk">Nama Produk</label>
+                                        <input type="text" class="form-control" id="nama_produk" name="nama_produk">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="harga">Harga Produk</label>
+                                        <input type="text" class="form-control" id="harga" name="harga">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stok">Stok Produk</label>
+                                        <input type="text" class="form-control" id="stok" name="stok">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="berat">Berat Produk</label>
+                                        <input type="text" class="form-control" id="berat" name="berat">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foto">Foto Produk</label>
+                                        <input type="file" id="foto" name="foto">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="deskripsi">Deskripsi Produk</label>
+                                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                <button type="submit" class="btn btn-primary">Tambah</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -32,7 +90,7 @@
                             <td>
                                 <a href="#" class="btn btn-primary">Detail</a>
                                 <a href="#" class="btn btn-warning">Ubah</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
+                                <a href="<?= base_url()  ?>Item_model" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
                         <?php $nomor++; ?>
