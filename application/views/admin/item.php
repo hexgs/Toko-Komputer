@@ -88,7 +88,7 @@
                             <td><?php echo $produk['stok'] ?></td>
                             <td><?php echo $produk['id_kategori'] ?></td>
                             <td>
-                                <a href="#" class="btn btn-primary">Detail</a>
+                                <a href="<?= base_url(); ?>admin/item/detail/<?= $produk['id_produk']; ?>" class="btn btn-primary">Detail</a>
                                 <a href="#" class="btn btn-warning">Ubah</a>
                                 <a href="<?= base_url(); ?>admin/item/hapus/<?= $produk['id_produk']; ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
                             </td>

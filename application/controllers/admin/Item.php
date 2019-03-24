@@ -34,10 +34,19 @@ class Item extends CI_Controller
             exit;
         }        
     }
+
     public function hapus($id_produk)
     {
         $this->Item_model->hapusData($id_produk);
         redirect('admin/item');
+    }
+
+    public function detail($id_produk)
+    {
+        $data['title'] = 'Item - Page';
+        $data['judul'] = 'Detail Produk';
+        $data['content'] = 'admin/detail';
+        $this->load->view('admin/templates/index', $data);
     }
 }
 
