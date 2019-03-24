@@ -34,11 +34,11 @@ class Item extends CI_Controller
             exit;
         }        
     }
-
-    // public function hapus()
-    // {
-    //     if
-    // }
+    public function hapus($id_produk)
+    {
+        $this->Item_model->hapusData($id_produk);
+        redirect('admin/item');
+    }
 }
 
 /* End of file Item.php */

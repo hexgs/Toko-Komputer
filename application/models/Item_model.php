@@ -29,10 +29,11 @@ class Item_model extends CI_Model
         $this->db->insert('produk', $data);
         redirect('admin/item');
     }
-
-    public function hapusData($id)
+    
+    public function hapusData($id_produk)
     {
-        return $this->db->delete($this->_table, array("id_produk" => $id));
+        $this->db->where('id_produk', $id_produk);
+        $this->db->delete('produk');
     }
 }
 
