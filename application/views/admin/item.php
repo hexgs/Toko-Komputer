@@ -89,7 +89,7 @@
                             <td><?php echo $produk['id_kategori'] ?></td>
                             <td>
                                 <a href="<?= base_url(); ?>admin/item/detail/<?= $produk['id_produk']; ?>" class="btn btn-primary">Detail</a>
-                                <a href="<?= base_url(); ?>admin/item/ubah/<?= $produk['id_produk']; ?>" class="btn btn-warning tampilModalUbah" data-toggle="modal" data-target="#formModal">Ubah</a>
+                                <a href="<?= base_url(); ?>admin/item/ubah/<?= $produk['id_produk']; ?>" class="btn btn-warning tampilModalUbah" data-toggle="modal" data-target="#formModal" data-id="<?= $produk['id_produk']; ?>">Ubah</a>
                                 <a href="<?= base_url(); ?>admin/item/hapus/<?= $produk['id_produk']; ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
                             </td>
                         </tr>

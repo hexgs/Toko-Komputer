@@ -48,6 +48,10 @@ class Item extends CI_Controller
         $data['content'] = 'admin/detail';
         $this->load->view('admin/templates/index', $data);
     }
+
+    public function getubah(){
+        echo json_encode($this->model('Item_model')->getDataItem($_POST['id_produk']));
+    }
 }
 
 /* End of file Item.php */

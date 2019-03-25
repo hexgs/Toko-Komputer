@@ -14,6 +14,14 @@ class Item_model extends CI_Model
         return $query->result_array();
     }
 
+    public function getDataItem($id)
+    {
+        // return $this->db->get_where('produk', ['id_produk' => $id])->row_array();
+        $this->db->query('SELECT * FROM ' . 'produk' . ' WHERE id_produk=:id');
+        $this->db->bind('id_produk', $id);
+        return $this->db->single();
+    }
+
     public function tambahData()
     { 
         $data = [
