@@ -18,13 +18,13 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li class="">
-          <a href="<?php site_url() ?>home">
+          <a href="<?= base_url() ?>admin/home">
             <i class="fa fa-dashboard"></i> 
             <span>Dashboard</span>
           </a>
         </li>
         <li class="">
-          <a href="<?php site_url() ?>item">
+          <a href="<?= base_url() ?>admin/item">
             <i class="fa fa-cubes"></i> 
             <span>Item Management</span>
           </a>

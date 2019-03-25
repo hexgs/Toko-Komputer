@@ -25,7 +25,7 @@
                   <td><?php echo $produk['nama_produk'] ?></td>
                   <td><?php echo $produk['harga'] ?></td>
                   <td><?php echo $produk['stok'] ?></td>
-                  <td><?php echo $produk['id_kategori'] ?></td>
+                  <td><?php echo $produk['nama_kategori'] ?></td>
                   <td>
                       <a href="#" class="btn btn-primary">Detail</a>
                       <a href="#" class="btn btn-warning">Ubah</a>
