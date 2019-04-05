@@ -1,3 +1,4 @@
+				<br>
 				<!-- FOOTER -->
                 <footer id="footer">
 			<!-- top footer -->

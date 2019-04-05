@@ -168,7 +168,7 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li><a href="<?= base_url(); ?>homefrontend">Home</a></li>
+						<li><a href="<?= base_url(); ?>home">Home</a></li>
 						<li><a href="<?= base_url(); ?>monitor">Monitor</a></li>
 						<li><a href="<?= base_url(); ?>laptops">Laptops</a></li>
 						<li><a href="<?= base_url(); ?>vga">VGA</a></li>
@@ -182,3 +182,5 @@
 			<!-- /container -->
 		</nav>
 		<!-- /NAVIGATION -->
+
+		
