@@ -77,11 +77,14 @@
 								<form>
 									<select class="input-select">
 										<option value="0">All Categories</option>
-										<option value="1">Monitor</option>
-										<option value="1">Laptops</option>
 										<option value="1">VGA</option>
-										<option value="1">Mouse</option>
-										<option value="1">Keyboard</option>
+										<option value="1">Harddisk</option>
+										<option value="1">Processor</option>
+										<option value="1">Monitor</option>
+										<option value="1">RAM</option>
+										<option value="1">SSD</option>
+										<option value="1">Motherboard</option>
+										<option value="1">CPU</option>
 									</select>
 									<input class="input" placeholder="Search here">
 									<button class="search-btn">Search</button>
@@ -169,11 +172,14 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="<?= base_url(); ?>home">Home</a></li>
-						<li><a href="<?= base_url(); ?>monitor">Monitor</a></li>
-						<li><a href="<?= base_url(); ?>laptops">Laptops</a></li>
-						<li><a href="<?= base_url(); ?>vga">VGA</a></li>
-						<li><a href="<?= base_url(); ?>mouse">Mouse</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">Keyboard</a></li>
+						<li><a href="<?= base_url(); ?>monitor">VGA</a></li>
+						<li><a href="<?= base_url(); ?>laptops">Harddisk</a></li>
+						<li><a href="<?= base_url(); ?>vga">Processor</a></li>
+						<li><a href="<?= base_url(); ?>mouse">Monitor</a></li>
+						<li><a href="<?= base_url(); ?>keyboard">RAM</a></li>
+						<li><a href="<?= base_url(); ?>keyboard">SSD</a></li>
+						<li><a href="<?= base_url(); ?>keyboard">Motherboard</a></li>
+						<li><a href="<?= base_url(); ?>keyboard">CPU/a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
