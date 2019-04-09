@@ -179,7 +179,7 @@
 						<li><a href="<?= base_url(); ?>ram">RAM</a></li>
 						<li><a href="<?= base_url(); ?>ssd">SSD</a></li>
 						<li><a href="<?= base_url(); ?>motherboard">Motherboard</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">CPU</a></li>
+						<li><a href="<?= base_url(); ?>cpu">CPU</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
