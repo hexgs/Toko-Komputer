@@ -1,3 +1,4 @@
+<!-- <?php var_dump($detail_produk);?> -->
 <!-- SECTION -->
 <div class="section">
 			<!-- container -->
@@ -6,6 +7,7 @@
 				<div class="row">
 					<!-- Product main img -->
 					<div class="col-md-5 col-md-push-2">
+                    
 						<div id="product-main-img">
 							<div class="product-preview">
 								<img src="<?= config_item('base_url()'); ?>assets/front/img/product01.png" alt="">
@@ -51,13 +53,13 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">nama product</h2>
+							<h2 class="product-name"><?=$detail_produk->nama_produk;?></h2>
 							
 							<div>
-								<h3 class="product-price">$980.00 </h3>
-								<span class="product-available">In Stock</span>
+								<h3 class="product-price">Rp. <?=$detail_produk->harga;?></h3>
+								<span class="product-available">Stock: <?=$detail_produk->stok;?></span>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p><?=$detail_produk->deskripsi;?></p>
 
 							<div class="add-to-cart">
 								<div class="qty-label">

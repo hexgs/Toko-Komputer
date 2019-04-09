@@ -6,7 +6,7 @@ class DetailProduk extends CI_Controller {
         $this->load->model('DetailProduk_model');
     }
 
-    public function index($id_produk=' ') {
+    public function index($id_produk=3) {
         $data['judul'] = 'Toko Komputer';
         $data['detail_produk'] = $this->DetailProduk_model->getDetailProduk($id_produk);
         $this->load->view('public/templates/header', $data);

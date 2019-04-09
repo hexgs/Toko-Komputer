@@ -39,6 +39,8 @@
 												<h4 class="product-price">Rp. <?php echo number_format($produk['harga'])?></h4>
 												<div class="product-btns">
 													<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>detailproduk';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+													<!-- <a href="<?php echo base_url('detailproduk').$produk->id_produk; ?>" class="btn btn-default">Detail</a> -->
+													
 												</div>
 											</div>
 											<div class="add-to-cart">
