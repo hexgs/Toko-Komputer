@@ -172,14 +172,14 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="<?= base_url(); ?>home">Home</a></li>
-						<li><a href="<?= base_url(); ?>monitor">VGA</a></li>
+						<li><a href="<?= base_url(); ?>vga">VGA</a></li>
 						<li><a href="<?= base_url(); ?>laptops">Harddisk</a></li>
-						<li><a href="<?= base_url(); ?>vga">Processor</a></li>
+						<li><a href="<?= base_url(); ?>processor">Processor</a></li>
 						<li><a href="<?= base_url(); ?>mouse">Monitor</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">RAM</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">SSD</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">Motherboard</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">CPU/a></li>
+						<li><a href="<?= base_url(); ?>keyboard">CPU</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
