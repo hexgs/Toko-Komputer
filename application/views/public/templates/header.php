@@ -178,7 +178,7 @@
 						<li><a href="<?= base_url(); ?>mouse">Monitor</a></li>
 						<li><a href="<?= base_url(); ?>ram">RAM</a></li>
 						<li><a href="<?= base_url(); ?>ssd">SSD</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">Motherboard</a></li>
+						<li><a href="<?= base_url(); ?>motherboard">Motherboard</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">CPU</a></li>
 					</ul>
 					<!-- /NAV -->
