@@ -176,8 +176,8 @@
 						<li><a href="<?= base_url(); ?>laptops">Harddisk</a></li>
 						<li><a href="<?= base_url(); ?>processor">Processor</a></li>
 						<li><a href="<?= base_url(); ?>mouse">Monitor</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">RAM</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">SSD</a></li>
+						<li><a href="<?= base_url(); ?>ram">RAM</a></li>
+						<li><a href="<?= base_url(); ?>ssd">SSD</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">Motherboard</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">CPU</a></li>
 					</ul>
