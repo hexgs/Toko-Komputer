@@ -8,7 +8,7 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">Laptops</h3>
+							<h3 class="title">Harddisk</h3>
 						</div>
 					</div>
 					<!-- /section title -->
