@@ -173,7 +173,7 @@
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="<?= base_url(); ?>home">Home</a></li>
 						<li><a href="<?= base_url(); ?>vga">VGA</a></li>
-						<li><a href="<?= base_url(); ?>laptops">Harddisk</a></li>
+						<li><a href="<?= base_url(); ?>hardisk">Harddisk</a></li>
 						<li><a href="<?= base_url(); ?>processor">Processor</a></li>
 						<li><a href="<?= base_url(); ?>mouse">Monitor</a></li>
 						<li><a href="<?= base_url(); ?>ram">RAM</a></li>
