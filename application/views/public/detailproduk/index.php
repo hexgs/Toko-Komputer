@@ -54,7 +54,7 @@
                 <h2 class="product-name"><?= $detail_produk->nama_produk; ?></h2>
 
                 <div>
-                    <h3 class="product-price">Rp. <?= $detail_produk->harga; ?></h3>
+                    <h3 class="product-price">Rp. <?= number_format($detail_produk->harga); ?></h3>
                     <span class="product-available">Stock: <?= $detail_produk->stok; ?></span>
                 </div>
                 <p><?= $detail_produk->deskripsi; ?></p>
