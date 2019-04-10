@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 
-<?php $this->load->view('admin/templates/header'); ?>
+<?php $this->load->view('public/templates/header'); ?>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body>
 <div class="wrapper">
 
 
@@ -16,13 +16,6 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        <?php echo $judul ?>
-        <!-- <small>Control panel</small> -->
-      </h1>
-      
-    </section>
 
     <!-- Main content -->
     <section class="content">
