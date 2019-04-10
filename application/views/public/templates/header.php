@@ -175,7 +175,7 @@
 						<li><a href="<?= base_url(); ?>vga">VGA</a></li>
 						<li><a href="<?= base_url(); ?>hardisk">Harddisk</a></li>
 						<li><a href="<?= base_url(); ?>processor">Processor</a></li>
-						<li><a href="<?= base_url(); ?>mouse">Monitor</a></li>
+						<li><a href="<?= base_url(); ?>monitor">Monitor</a></li>
 						<li><a href="<?= base_url(); ?>ram">RAM</a></li>
 						<li><a href="<?= base_url(); ?>ssd">SSD</a></li>
 						<li><a href="<?= base_url(); ?>motherboard">Motherboard</a></li>
