@@ -33,7 +33,7 @@
 											</div>
 										</div>
 										<div class="product-body">
-											<p class="product-category">Category</p>
+											<!-- <p class="product-category">Category</p> -->
 											<h3 class="product-name"><?php echo $produk['nama_produk']; ?></h3>
 											<h4 class="product-price">Rp. <?php echo number_format($produk['harga']) ?>
 												<!-- <del class="product-old-price">$990.00</del> -->
@@ -95,7 +95,7 @@
 										<img src="<?= config_item('base_url()'); ?>assets/front/img/product06.png" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
+										<!-- <p class="product-category">Category</p> -->
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">$980.00 </h4>
 
@@ -115,7 +115,7 @@
 										<img src="<?= config_item('base_url()'); ?>assets/front/img/product07.png" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
+										<!-- <p class="product-category">Category</p> -->
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">$980.00 </h4>
 
@@ -155,7 +155,7 @@
 										<img src="<?= config_item('base_url()'); ?>assets/front/img/product09.png" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
+										<!-- <p class="product-category">Category</p> -->
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">$980.00 </h4>
 
@@ -175,7 +175,7 @@
 										<img src="<?= config_item('base_url()'); ?>assets/front/img/product01.png" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
+										<!-- <p class="product-category">Category</p> -->
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">$980.00 </h4>
 
