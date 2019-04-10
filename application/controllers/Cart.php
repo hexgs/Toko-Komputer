@@ -19,7 +19,7 @@ class Cart extends CI_Controller
         $this->load->view('public/templates/dashboard', $data);
     }
 
-    public function cart($id_produk)
+    public function addCart($id_produk)
     {
         $data['judul'] = 'Toko Komputer';
         $data['content'] = 'public/cart/index';
