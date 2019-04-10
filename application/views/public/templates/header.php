@@ -28,6 +28,9 @@
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="<?= config_item('base_url()'); ?>assets/front/css/style.css"/>
 
+		<!-- login -->
+		<link type="text/css" rel="stylesheet" href="<?= config_item('base_url()'); ?>assets/front/css/login.css"/>
+
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -48,8 +51,8 @@
 						<li><a href="#"><i class="fa fa-map-marker"></i> Jalan Sawojajar</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-user-o"></i> Log In </a></li>
-						<li><a href="#"><i class="fa fa-user-o"></i> Sign Up</a></li>
+						<li><a href="<?= base_url();?>login"><i class="fa fa-user-o"></i> Log In </a></li>
+						<li><a href="<?= base_url();?>daftar"><i class="fa fa-user-o"></i> Sign Up</a></li>
 					</ul>
 				</div>
 			</div>
@@ -179,7 +182,7 @@
 						<li><a href="<?= base_url(); ?>keyboard">RAM</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">SSD</a></li>
 						<li><a href="<?= base_url(); ?>keyboard">Motherboard</a></li>
-						<li><a href="<?= base_url(); ?>keyboard">CPU/a></li>
+						<li><a href="<?= base_url(); ?>keyboard">CPU</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
