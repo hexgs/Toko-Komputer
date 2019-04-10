@@ -38,7 +38,7 @@
 											<h4 class="product-price">Rp. <?php echo number_format($produk['harga']) ?>
 												<!-- <del class="product-old-price">$990.00</del> -->
 											</h4>
-											
+
 											<div class="product-btns">
 												<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>detailproduk/detail/<?= $produk['id_produk']; ?>';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
 											</div>
