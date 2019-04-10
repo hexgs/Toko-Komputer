@@ -66,7 +66,7 @@
 					<!-- LOGO -->
 					<div class="col-md-3">
 						<div class="header-logo">
-							<a href="#" class="logo">
+							<a href="<?= base_url(); ?>" class="logo">
 								<img src="<?= base_url(); ?>assets/front/img/logo.png" alt="">
 							</a>
 						</div>
@@ -107,7 +107,7 @@
 								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Your Cart</span>
-									<div class="qty">1</div>
+									<!-- <div class="qty">1</div> -->
 								</a>
 								<div class="cart-dropdown">
 									<!-- <div class="cart-list">
