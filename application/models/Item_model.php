@@ -54,7 +54,15 @@ class Item_model extends CI_model
         return $this->db->get_where('produk', ['id_kategori' => 8])->result_array();
         // return $this->db->get('produk')->result_array();
     }
+
     public function tampilData($id)
+    {
+        return $this->db->where('id_produk', $id)
+            ->get('produk')
+            ->row();
+    }
+
+    public function tampilCart($id)
     {
         return $this->db->where('id_produk', $id)
             ->get('produk')
