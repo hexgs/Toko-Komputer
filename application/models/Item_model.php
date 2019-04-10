@@ -1,42 +1,56 @@
 <?php
 
-class Item_model extends CI_model {
-    public function getVga() {
+class Item_model extends CI_model
+{
+    public function getNewProduct()
+    {
+        return $this->db->get('produk')->result_array();
+    }
+
+    public function getVga()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 1])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getHardisk() {
+    public function getHardisk()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 2])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getProcessor() {
+    public function getProcessor()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 3])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getMonitor() {
+    public function getMonitor()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 4])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getRam() {
+    public function getRam()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 5])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getSSD() {
+    public function getSSD()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 6])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getMotherboard() {
+    public function getMotherboard()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 7])->result_array();
         // return $this->db->get('produk')->result_array();
     }
 
-    public function getCPU() {
+    public function getCPU()
+    {
         return $this->db->get_where('produk', ['id_kategori' => 8])->result_array();
         // return $this->db->get('produk')->result_array();
     }
