@@ -1,4 +1,4 @@
-<!-- <?php var_dump($vga); ?> -->
+<!-- <?php var_dump($cpu); ?> -->
 <!-- SECTION -->
 <div class="section">
 	<!-- container -->
@@ -9,7 +9,7 @@
 			<!-- section title -->
 			<div class="col-md-12">
 				<div class="section-title">
-					<h3 class="title">VGA</h3>
+					<h3 class="title">CPU</h3>
 				</div>
 			</div>
 			<!-- /section title -->
@@ -24,7 +24,7 @@
 						<!-- tab -->
 						<div id="tab1" class="tab-pane active">
 							<div class="products-slick" data-nav="#slick-nav-1">
-								<?php foreach ($vga as $produk) : ?>
+								<?php foreach ($cpu as $produk) : ?>
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
@@ -32,7 +32,7 @@
 										</div>
 										<div class="product-body">
 											<!-- <p class="product-category"><?php echo $produk['id_kategori'] ?></p> -->
-											<h3 class="product-name"><?php echo $produk['nama_produk'] ?></h3>
+											<h3 class="product-name"><?php echo $produk['nama_produk']; ?></h3>
 											<h4 class="product-price">Rp. <?php echo number_format($produk['harga']) ?></h4>
 											<div class="product-btns">
 												<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>detailproduk/detail/<?= $produk['id_produk']; ?>';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>

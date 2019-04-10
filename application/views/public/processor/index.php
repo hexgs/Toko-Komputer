@@ -1,4 +1,4 @@
-<!-- <?php var_dump($vga); ?> -->
+<!-- <?php var_dump($processor); ?> -->
 <!-- SECTION -->
 <div class="section">
 	<!-- container -->
@@ -9,7 +9,7 @@
 			<!-- section title -->
 			<div class="col-md-12">
 				<div class="section-title">
-					<h3 class="title">VGA</h3>
+					<h3 class="title">PROCESSOR</h3>
 				</div>
 			</div>
 			<!-- /section title -->
@@ -24,7 +24,7 @@
 						<!-- tab -->
 						<div id="tab1" class="tab-pane active">
 							<div class="products-slick" data-nav="#slick-nav-1">
-								<?php foreach ($vga as $produk) : ?>
+								<?php foreach ($processor as $produk) : ?>
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">

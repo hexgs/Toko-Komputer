@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -8,31 +7,27 @@
 <div class="wrapper">
 
 
-
-  <!-- Left side column. contains the logo and sidebar -->
-  
-
+    <!-- Left side column. contains the logo and sidebar -->
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <!-- Small boxes (Stat box) -->
+        <?php $this->load->view($content); ?>
+        <!-- /.row -->
+        <!-- Main row -->
+        <!-- /.row (main row) -->
 
-    <!-- Main content -->
-    <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <?php $this->load->view($content); ?>
-      <!-- /.row -->
-      <!-- Main row -->
-      
-      <!-- /.row (main row) -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
 
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  
-  <?php $this->load->view('public/templates/footer');  ?>
+    <?php $this->load->view('public/templates/footer');  ?>
 
 
 </body>
+
 </html>
