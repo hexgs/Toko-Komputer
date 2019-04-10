@@ -38,19 +38,13 @@
 											<h4 class="product-price">Rp. <?php echo number_format($produk['harga']) ?>
 												<!-- <del class="product-old-price">$990.00</del> -->
 											</h4>
-											<!-- <div class="product-rating">
-																						<i class="fa fa-star"></i>
-																						<i class="fa fa-star"></i>
-																						<i class="fa fa-star"></i>
-																						<i class="fa fa-star"></i>
-																						<i class="fa fa-star"></i>
-																					</div> -->
+											
 											<div class="product-btns">
 												<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>detailproduk/detail/<?= $produk['id_produk']; ?>';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+											<button class="add-to-cart-btn" onclick="window.location.href = '<?= base_url(); ?>cart/addCart/<?= $produk['id_produk']; ?>';"><i class="fa fa-shopping-cart"></i> add to cart</button>
 										</div>
 									</div>
 									<!-- /product -->

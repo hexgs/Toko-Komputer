@@ -1,4 +1,4 @@
-
+<?php var_dump($produk)?>
 	<div class="container">
 		<h1>Cart</h1>
 		<hr>
