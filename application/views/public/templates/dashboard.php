@@ -3,15 +3,13 @@
 
 <?php $this->load->view('public/templates/header'); ?>
 
-<body class="hold-transition skin-blue sidebar-mini">
-  <div class="wrapper">
-
+<body>
+<div class="wrapper">
 
 
     <!-- Left side column. contains the logo and sidebar -->
 
-
-
+  <!-- Content Wrapper. Contains page content -->
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Main content -->
@@ -20,7 +18,6 @@
         <?php $this->load->view($content); ?>
         <!-- /.row -->
         <!-- Main row -->
-
         <!-- /.row (main row) -->
 
       </section>
