@@ -3,8 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Loginmodel extends CI_Model {
 	// declare private variable
 	private $_id_pelanggan;
-  	private $_nama_pelanggan;
-  	private $_email_pelanggan;
+  private $_nama_pelanggan;
+  private $_email_pelanggan;
 	private $_password_pelanggan;
 	private $_telepon;
 	
@@ -39,4 +39,3 @@ class Loginmodel extends CI_Model {
 	  }
 	}    
   }
-?>
