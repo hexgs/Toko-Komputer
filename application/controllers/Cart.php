@@ -6,6 +6,8 @@ class Cart extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Item_model');
+        $this->load->model('Order_model');
+        $this->load->model('OrderDetail_model');
     }
 
     public function index()
