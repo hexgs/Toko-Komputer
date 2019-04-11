@@ -78,6 +78,17 @@ class Cart extends CI_Controller
                 'tanggal_pembelian' => date ('Y-m-d'),
                 'total_pembelian' => $this->cart->total()
             );
+            $order = $this->Order_model->create($order);
+
+            // save order detail
+            // foreach ($this->cart->contents() as $items) {
+            //     $orderDetail = array(
+            //         'id_pembelian' => $id_pembelian,
+            //         'id_produk' => $items['id_produk'],
+            //         'jumlah' => $items['qty']
+            //     );
+            //     $this->OrderDetail_model->create($orderDetail);
+            // }
         }
     }
 }
