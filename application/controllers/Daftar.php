@@ -47,7 +47,7 @@ class Daftar extends CI_Controller
 			$this->pelanggan->setNama($nama_pelanggan);
 			$this->pelanggan->setTelepon($telepon);
 			$this->pelanggan->setEmail($email_pelanggan);
-			$this->pelanggan->setPassword(MD5($password_pelanggan));
+			$this->pelanggan->setPassword(md5($password_pelanggan));
 			// $this->user->setStatus(1);
 			// insert values in database
 			$this->pelanggan->createUser();
