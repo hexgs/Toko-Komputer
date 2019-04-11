@@ -89,6 +89,11 @@ class Cart extends CI_Controller
             //     );
             //     $this->OrderDetail_model->create($orderDetail);
             // }
+
+            //remove cart
+            $this->cart->destroy();
+
+            redirect('home');
         }
     }
 }
