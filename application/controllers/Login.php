@@ -49,7 +49,7 @@ class Login extends CI_Controller
 			$password_pelanggan = $this->input->post('password_pelanggan');
 
 			$this->pelanggan->setEmail($email_pelanggan);
-			$this->pelanggan->setPassword($password_pelanggan);
+			$this->pelanggan->setPassword(md5($password_pelanggan));
 			//query database
 			$result = $this->pelanggan->login();
 

@@ -48,9 +48,9 @@
 		<div id="top-header">
 			<div class="container">
 				<ul class="header-links pull-left">
-					<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-					<li><a href="#"><i class="fa fa-envelope-o"></i> tokokomputer@gmail.com</a></li>
-					<li><a href="#"><i class="fa fa-map-marker"></i> Jalan Sawojajar</a></li>
+					<li><a><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+					<li><a><i class="fa fa-envelope-o"></i> tokokomputer@gmail.com</a></li>
+					<li><a><i class="fa fa-map-marker"></i> Jalan Sawojajar</a></li>
 				</ul>
 				<ul class="header-links pull-right">
 					<?php if (isset($_SESSION['email_pelanggan'])) { ?>
