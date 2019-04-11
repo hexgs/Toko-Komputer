@@ -25,12 +25,12 @@
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="<?= base_url(); ?>assets/front/css/font-awesome.min.css">
-		<!-- login -->
-		<link type="text/css" rel="stylesheet" href="<?= config_item('base_url()'); ?>assets/front/css/login.css"/>
+	<!-- login -->
+	<!-- <link type="text/css" rel="stylesheet" href="<?= base_url(); ?>assets/front/css/login.css" /> -->
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="<?= base_url(); ?>assets/front/css/style.css" />
 
@@ -53,8 +53,13 @@
 					<li><a href="#"><i class="fa fa-map-marker"></i> Jalan Sawojajar</a></li>
 				</ul>
 				<ul class="header-links pull-right">
-					<li><a href="#"><i class="fa fa-user-o"></i> Log In </a></li>
-					<li><a href="#"><i class="fa fa-user-o"></i> Sign Up</a></li>
+					<?php if (isset($_SESSION['email_pelanggan'])) { ?>
+						<li><a style="color:white;">Hi, <?= ($_SESSION['nama_pelanggan']) ?></a></li>
+						<li><a href="<?= base_url(); ?>login/logout"><i class="fa fa-user-o"></i> Logout </a></li>
+					<?php } else { ?>
+						<li><a href="<?= base_url(); ?>login"><i class="fa fa-user-o"></i> Log In </a></li>
+						<li><a href="<?= base_url(); ?>daftar"><i class="fa fa-user-o"></i> Sign Up</a></li>
+					<?php } ?>
 				</ul>
 			</div>
 		</div>
@@ -83,13 +88,13 @@
 								<select class="input-select">
 									<option value="0">All Categories</option>
 									<option value="1">VGA</option>
-									<option value="1">Harddisk</option>
-									<option value="1">Processor</option>
-									<option value="1">Monitor</option>
-									<option value="1">RAM</option>
-									<option value="1">SSD</option>
-									<option value="1">Motherboard</option>
-									<option value="1">CPU</option>
+									<option value="2">Harddisk</option>
+									<option value="3">Processor</option>
+									<option value="4">Monitor</option>
+									<option value="5">RAM</option>
+									<option value="6">SSD</option>
+									<option value="7">Motherboard</option>
+									<option value="8">CPU</option>
 								</select>
 								<input class="input" placeholder="Search here">
 								<button class="search-btn">Search</button>
