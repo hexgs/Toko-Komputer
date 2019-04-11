@@ -6,6 +6,8 @@ class Cart extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Item_model');
+        $this->load->model('Order_model');
+        $this->load->model('OrderDetail_model');
     }
 
     public function index()
@@ -65,5 +67,35 @@ class Cart extends CI_Controller
         $data['judul'] = 'Toko Komputer';
         $data['content'] = 'public/cart/index';
         $this->load->view('public/templates/dashboard', $data);
+    }
+
+    public function checkout() {
+        if($this->session->userdata('email_pelanggan') == null) {
+            redirect('login/login');
+        } else {
+            //save new order
+            $order = array(
+                'id_pelanggan' => $this->session->userdata('id_pelanggan'),
+                'id_ongkir' => 1,
+                'tanggal_pembelian' => date ('Y-m-d'),
+                'total_pembelian' => $this->cart->total()
+            );
+            $order = $this->Order_model->create($order);
+
+            // save order detail
+            // foreach ($this->cart->contents() as $items) {
+            //     $orderDetail = array(
+            //         'id_pembelian' => $id_pembelian,
+            //         'id_produk' => $items['id_produk'],
+            //         'jumlah' => $items['qty']
+            //     );
+            //     $this->OrderDetail_model->create($orderDetail);
+            // }
+
+            //remove cart
+            $this->cart->destroy();
+
+            redirect('home');
+        }
     }
 }
