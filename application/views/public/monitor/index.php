@@ -39,7 +39,7 @@
 											</div>
 										</div>
 										<div class="add-to-cart">
-										<button class="add-to-cart-btn" onclick="window.location.href = '<?= base_url(); ?>cart/addCart/<?= $produk['id_produk']; ?>';"><i class="fa fa-shopping-cart"></i> add to cart</button>
+											<button class="add-to-cart-btn" onclick="window.location.href = '<?= base_url(); ?>cart/addCart/<?= $produk['id_produk']; ?>';"><i class="fa fa-shopping-cart"></i> add to cart</button>
 										</div>
 									</div>
 									<!-- /product -->
