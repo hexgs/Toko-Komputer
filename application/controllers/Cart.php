@@ -6,6 +6,8 @@ class Cart extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Item_model');
+        $this->load->model('Order_model');
+        $this->load->model('OrderDetail_model');
     }
 
     public function index()
@@ -79,6 +81,21 @@ class Cart extends CI_Controller
                 'total_pembelian' => $this->cart->total()
             );
             $order = $this->Order_model->create($order);
+
+            // save order detail
+            // foreach ($this->cart->contents() as $items) {
+            //     $orderDetail = array(
+            //         'id_pembelian' => $id_pembelian,
+            //         'id_produk' => $items['id_produk'],
+            //         'jumlah' => $items['qty']
+            //     );
+            //     $this->OrderDetail_model->create($orderDetail);
+            // }
+
+            //remove cart
+            $this->cart->destroy();
+
+            redirect('home');
         }
     }
 }
