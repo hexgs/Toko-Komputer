@@ -91,5 +91,6 @@
 	</table>
 	<a href="<?= base_url(); ?>home" class="btn btn-default">Lanjutkan Belanja</a>
 	<?php echo form_submit('', 'Update your Cart', "class='btn btn-primary'"); ?>
+	<a href="<?= base_url(); ?>checkout" class="btn btn-danger">Checkout</a>
 	<?php form_close(); ?>
 </div>
