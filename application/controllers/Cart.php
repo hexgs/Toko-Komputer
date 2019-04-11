@@ -66,4 +66,13 @@ class Cart extends CI_Controller
         $data['content'] = 'public/cart/index';
         $this->load->view('public/templates/dashboard', $data);
     }
+
+    public function checkout() {
+        if($this->session->userdata('email_pelanggan') == null) {
+            redirect('login/login');
+        } else {
+            //save new order
+            
+        }
+    }
 }
