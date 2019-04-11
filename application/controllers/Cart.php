@@ -72,7 +72,12 @@ class Cart extends CI_Controller
             redirect('login/login');
         } else {
             //save new order
-            
+            $order = array(
+                'id_pelanggan' => $this->session->userdata('id_pelanggan'),
+                'id_ongkir' => 1,
+                'tanggal_pembelian' => date ('Y-m-d'),
+                'total_pembelian' => $this->cart->total()
+            );
         }
     }
 }
