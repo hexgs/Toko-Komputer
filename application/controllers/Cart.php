@@ -71,7 +71,14 @@ class Cart extends CI_Controller
         if($this->session->userdata('email_pelanggan') == null) {
             redirect('login/login');
         } else {
-
+            //save new order
+            $order = array(
+                'id_pelanggan' => $this->session->userdata('id_pelanggan'),
+                'id_ongkir' => 1,
+                'tanggal_pembelian' => date ('Y-m-d'),
+                'total_pembelian' => $this->cart->total()
+            );
+            $order = $this->Order_model->create($order);
         }
     }
 }
