@@ -1,3 +1,4 @@
+
 <?php
 
 class Item_model extends CI_model
@@ -67,5 +68,13 @@ class Item_model extends CI_model
         return $this->db->where('id_produk', $id)
             ->get('produk')
             ->row();
+    }
+
+    public function getAllItem(){
+
+        $query = $this->db->query('SELECT * FROM produk JOIN kategori_produk ON produk.id_kategori = kategori_produk.id_kategori');
+            
+        return $query->result_array();
+
     }
 }

@@ -52,11 +52,13 @@
   $(function () {
     $('#example2').DataTable({
       'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
+      'lengthChange': true,
+      'searching'   : true,
       'ordering'    : true,
       'info'        : true,
       'autoWidth'   : false
     })
   })
 </script>
+<script src="<?= base_url() ?>assets/back/dist/js/sweetalert2.all.min.js"></script>
+<script src="<?= base_url() ?>assets/back/dist/js/myscript.js"></script>

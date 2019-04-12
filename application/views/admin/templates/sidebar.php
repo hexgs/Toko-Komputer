@@ -4,10 +4,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?= base_url('assets/back/') ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?= base_url('') ?>assets/img/admin/User-icon.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Administrator</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -18,25 +18,25 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li class="">
-          <a href="<?php site_url() ?>home">
+          <a href="<?= base_url() ?>admin/home">
             <i class="fa fa-dashboard"></i> 
             <span>Dashboard</span>
           </a>
         </li>
         <li class="">
-          <a href="<?php site_url() ?>item">
+          <a href="<?= base_url() ?>admin/item">
             <i class="fa fa-cubes"></i> 
             <span>Item Management</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
+        <li class="">
+          <a href="<?= base_url() ?>admin/transaction">
             <i class="fa fa-exchange"></i> 
             <span>Transaction</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
+        <li class="">
+          <a href="<?= base_url() ?>admin/user">
             <i class="fa fa-users"></i> 
             <span>User Management</span>
           </a>
