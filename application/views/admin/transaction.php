@@ -15,7 +15,7 @@
 						<tr>
 							<th>No</th>
 							<th>Nama Pelanggan</th>
-							<th>Ongkir</th>
+							<!-- <th>Ongkir</th> -->
 							<th>Tanggal Pembelian</th>
 							<th>Total Pembelian</th>
 							<th>Aksi</th>
@@ -27,7 +27,7 @@
 							<tr>
 								<td><?php echo $nomor ?></td>
 								<td><?php echo $tsc['nama_pelanggan'] ?></td>
-								<td></td>
+								<!-- <td></td> -->
 								<td><?php echo $tsc['tanggal_pembelian'] ?></td>
 								<td><?php echo $tsc['total_pembelian'] ?></td>
 
