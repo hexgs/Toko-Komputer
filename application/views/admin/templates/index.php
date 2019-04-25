@@ -1,3 +1,4 @@
+<?php $this->load->view('admin/templates/head'); ?>
 
 <!DOCTYPE html>
 <html>
