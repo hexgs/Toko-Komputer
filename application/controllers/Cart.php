@@ -97,7 +97,7 @@ class Cart extends CI_Controller
 
             $data['judul'] = 'Toko Komputer';
             $this->load->view('public/templates/header', $data);
-            $this->load->view('public/cart/checkout');
+            $this->load->view('public/cart/bukti');
             $this->load->view('public/templates/footer');
         }
     }
