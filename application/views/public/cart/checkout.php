@@ -22,10 +22,10 @@
 								<input type="text" readonly value="<?php echo $this->session->userdata('email_pelanggan'); ?>" class="form-control">
 							</div>
 							<div class="form-group">
-								<input type="text" readonly value="<?php echo $this->session->userdata('telepon'); ?>" class="form-control">
+								<input type="number" readonly value="<?php echo $this->session->userdata('telepon'); ?>" class="form-control">
 							</div>
 						<!-- /Billing Details -->
-						<!-- <a href="<?= base_url(); ?>cart/index" class="btn btn-default">Kembali</a> -->
+						<a href="<?= base_url(); ?>cart/index" class="btn btn-default">Kembali</a>
 						<a href="<?= base_url(); ?>cart/checkout" class="btn btn-danger">Checkout</a>
 					</div>
 
