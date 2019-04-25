@@ -5,7 +5,7 @@
 				<h3 class="box-title">Details Item</h3>
 				<hr>
 				<div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
-				<?php if($this->session->flashdata('flash')): ?>
+				<?php if ($this->session->flashdata('flash')) : ?>
 				<?php endif; ?>
 			</div>
 			<!-- /.box-header -->
@@ -22,7 +22,7 @@
 							</tr>
 							<tr>
 								<td>Harga</td>
-								<td>: Rp <?= number_format($detail['harga'],0,',','.') ?></td>
+								<td>: Rp <?= number_format($detail['harga'], 0, ',', '.') ?></td>
 							</tr>
 							<tr>
 								<td>Status</td>
@@ -48,9 +48,9 @@
 								<td></td>
 							</tr>
 						</table>
-				<?php endforeach; ?>
-						<a href="#" class="btn btn-default" onclick="window.history.go(-1)">Kembali</a>
-						<a href="<?= base_url('') ?>admin/item/updateItem/<?= $detail['id_produk'] ?>" class="btn btn-warning">Edit</a>
+					<?php endforeach; ?>
+					<a href="#" class="btn btn-default" onclick="window.history.go(-1)">Kembali</a>
+					<a href="<?= base_url('') ?>admin/item/updateItem/<?= $detail['id_produk'] ?>" class="btn btn-warning">Edit</a>
 				</div>
 			</div>
 		</div>

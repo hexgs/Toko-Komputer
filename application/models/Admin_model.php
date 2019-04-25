@@ -43,6 +43,11 @@ class Admin_model extends CI_Model {
         $this->db->delete('produk', ['id_produk' => $id]);
     }
 
+    public function deleteTsc($id)
+    {
+        $this->db->delete('pembelian', ['id_pembelian' => $id]);
+    }
+
 
 
 
@@ -128,6 +133,3 @@ class Admin_model extends CI_Model {
 }
 
 /* End of file Item_model.php */
-
-
-?>
