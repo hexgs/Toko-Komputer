@@ -18,7 +18,7 @@
               <th>No</th>
               <th>Nama</th>
               <th>Harga</th>
-              <th>Status</th>
+              <!-- <th>Status</th> -->
               <th>Stok</th>
               <th>Kategori</th>
               <th>Aksi</th>
@@ -31,7 +31,7 @@
                 <td><?php echo $nomor ?></td>
                 <td><?php echo $produk['nama_produk'] ?></td>
                 <td><?php echo 'Rp ' . number_format($produk['harga'], 0, ',', '.') ?></td>
-                <td><?php echo $produk['status'] ?></td>
+                <!-- <td><?php echo $produk['status'] ?></td> -->
                 <td><?php echo $produk['stok'] ?></td>
                 <td><?php echo $produk['nama_kategori'] ?></td>
                 <td>
