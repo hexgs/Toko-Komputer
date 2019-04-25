@@ -101,4 +101,11 @@ class Cart extends CI_Controller
             $this->load->view('public/templates/footer');
         }
     }
+
+    public function billing(){
+        $data['judul'] = 'Toko Komputer';
+        $this->load->view('public/templates/header', $data);
+        $this->load->view('public/cart/checkout');
+        $this->load->view('public/templates/footer');
+    }
 }
