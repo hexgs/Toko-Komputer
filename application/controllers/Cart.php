@@ -95,7 +95,10 @@ class Cart extends CI_Controller
             //remove cart
             $this->cart->destroy();
 
-            redirect('home');
+            $data['judul'] = 'Toko Komputer';
+            $this->load->view('public/templates/header', $data);
+            $this->load->view('public/cart/checkout');
+            $this->load->view('public/templates/footer');
         }
     }
 }
