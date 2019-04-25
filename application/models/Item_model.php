@@ -77,4 +77,8 @@ class Item_model extends CI_model
         return $query->result_array();
 
     }
+
+    public function getPelanggan(){
+        $query = $this->db->query('');
+    }
 }
