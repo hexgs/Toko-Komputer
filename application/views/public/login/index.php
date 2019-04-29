@@ -27,10 +27,11 @@
 </form> -->
 <div class="container">
   <div class="row content-center">
-    <div class="col-md-8">
+    <div class="col-md">
       <div class="imgcontainer">
-        <img style="width:150px;height:150px;" src="<?= base_url(); ?>assets/FRONT/img/default.png" alt="">
+        <center><img style="width:150px;height:150px;" src="<?= base_url(); ?>assets/FRONT/img/default.png" alt=""></center>
       </div>
+      <br>
       <!-- <h2>Login Form</h2> -->
       <?php if (validation_errors()) { ?>
         <div class="alert alert-danger">
