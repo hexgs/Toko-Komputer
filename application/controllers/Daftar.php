@@ -51,7 +51,7 @@ class Daftar extends CI_Controller
 			// $this->user->setStatus(1);
 			// insert values in database
 			$this->pelanggan->createUser();
-			redirect('home');
+			redirect('login/index');
 		}
 	}
 }
