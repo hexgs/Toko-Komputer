@@ -27,7 +27,7 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="<?= base_url(); ?>assets/front/img/product01.png" alt="">
+											<img src="<?= base_url() . 'assets/front/img/' . $produk['foto'] ?>" width="100px" height="250px" />
 											<div class="product-label">
 												<span class="new">NEW</span>
 											</div>
