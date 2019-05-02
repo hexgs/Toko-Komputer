@@ -28,7 +28,7 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="<?= base_url(); ?>assets/front/img/product01.png" alt="">
+											<img src="<?= base_url() . 'assets/front/img/' . $produk['foto'] ?>" width="100px" height="250px" />
 										</div>
 										<div class="product-body">
 											<!-- <p class="product-category"><?php echo $produk['id_kategori'] ?></p> -->
@@ -39,7 +39,7 @@
 											</div>
 										</div>
 										<div class="add-to-cart">
-										<button class="add-to-cart-btn" onclick="window.location.href = '<?= base_url(); ?>cart/addCart/<?= $produk['id_produk']; ?>';"><i class="fa fa-shopping-cart"></i> add to cart</button>
+											<button class="add-to-cart-btn" onclick="window.location.href = '<?= base_url(); ?>cart/addCart/<?= $produk['id_produk']; ?>';"><i class="fa fa-shopping-cart"></i> add to cart</button>
 										</div>
 									</div>
 									<!-- /product -->
