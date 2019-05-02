@@ -113,16 +113,16 @@
 							<!-- Cart -->
 							<div class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-									<i class="fa fa-shopping-cart"></i>
-									<span>Your Cart</span>
+									<a href="<?= base_url(); ?>cart"><i class="fa fa-shopping-cart"></i>
+										<span>Your Cart</span></a>
 									<!-- <div class="qty">1</div> -->
 								</a>
-								<div class="cart-dropdown">
+								<!-- <div class="cart-dropdown">
 									<div class="cart-btns">
 										<a href="<?= base_url(); ?>cart">View Cart</a>
 										<a href="<?= base_url(); ?>checkout">Checkout<i class="fa fa-arrow-circle-right"></i></a>
 									</div>
-								</div>
+								</div> -->
 							</div>
 							<!-- /Cart -->
 
