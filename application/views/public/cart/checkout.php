@@ -21,8 +21,11 @@
 							<div class="form-group">
 								<input type="text" readonly value="<?php echo $this->session->userdata('email_pelanggan'); ?>" class="form-control">
 							</div>
-							<div class="form-group">
+							<!-- <div class="form-group">
 								<input type="number" readonly value="<?php echo $this->session->userdata('telepon'); ?>" class="form-control">
+							</div> -->
+							<div class="form-group">
+								<textarea placeholder="alamat" class="form-control"></textarea>
 							</div>
 						<!-- /Billing Details -->
 						<a href="<?= base_url(); ?>cart/index" class="btn btn-default">Kembali</a>

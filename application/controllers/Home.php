@@ -17,4 +17,12 @@ class Home extends CI_Controller
         $this->load->view('public/home/index');
         $this->load->view('public/templates/footer');
     }
+
+    public function cari()
+    {
+        $data['pilihKategori'] = $this->input->post("pilihKategori");
+        $data['inputNamaProduk'] = $this->input->post("inputNamaProduk");
+
+        $data['produk'] = $this->Item_model->cari($data['pilihKategori'], $data['inputNamaProduk'])->result();
+    }
 }
