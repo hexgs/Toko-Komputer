@@ -1,3 +1,4 @@
+<br>
 <!-- <?php var_dump($cart) ?>
 	<div class="container">
 		<h1>Cart</h1>
