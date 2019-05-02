@@ -21,7 +21,7 @@
 									<p class="help-text">* Ukuran Gambar Maximal 2 Mb.</p>
 								<!-- </div> -->
 							<!-- </div> -->
-						<a href="<?= base_url(); ?>home" class="btn btn-danger">Submit</a>
+						<a href="<?= base_url(); ?>cart/terimakasih" class="btn btn-danger">Submit</a>
 					</div>
 
 				</div>
