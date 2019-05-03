@@ -69,16 +69,18 @@ class Cart extends CI_Controller
         $this->load->view('public/templates/dashboard', $data);
     }
 
-    public function checkout() {
-        if($this->session->userdata('email_pelanggan') == null) {
+    public function checkout()
+    {
+        if ($this->session->userdata('email_pelanggan') == null) {
             redirect('login/login');
         } else {
             //save new order
             $order = array(
                 'id_pelanggan' => $this->session->userdata('id_pelanggan'),
                 'id_ongkir' => 1,
-                'tanggal_pembelian' => date ('Y-m-d'),
-                'total_pembelian' => $this->cart->total()
+                'tanggal_pembelian' => date('Y-m-d'),
+                'total_pembelian' => $this->cart->total(),
+                'alamat' => $this->input->post('alamat')
             );
             $order = $this->Order_model->create($order);
 
@@ -102,10 +104,11 @@ class Cart extends CI_Controller
         }
     }
 
-    public function billing(){
-        if($this->session->userdata('email_pelanggan') == null) {
+    public function billing()
+    {
+        if ($this->session->userdata('email_pelanggan') == null) {
             redirect('login/login');
-        }else{
+        } else {
             $data['judul'] = 'Toko Komputer';
             $this->load->view('public/templates/header', $data);
             $this->load->view('public/cart/checkout');
@@ -113,10 +116,11 @@ class Cart extends CI_Controller
         }
     }
 
-    public function terimakasih(){
+    public function terimakasih()
+    {
         $data['judul'] = 'Toko Komputer';
         $this->load->view('public/templates/header', $data);
-         $this->load->view('public/cart/terimakasih');
-         $this->load->view('public/templates/footer');
+        $this->load->view('public/cart/terimakasih');
+        $this->load->view('public/templates/footer');
     }
 }
