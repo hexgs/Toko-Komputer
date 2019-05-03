@@ -18,6 +18,7 @@
 							<!-- <th>Ongkir</th> -->
 							<th>Tanggal Pembelian</th>
 							<th>Total Pembelian</th>
+							<th>Alamat</th>
 							<th>Aksi</th>
 						</tr>
 					</thead>
@@ -30,6 +31,7 @@
 								<!-- <td></td> -->
 								<td><?php echo $tsc['tanggal_pembelian'] ?></td>
 								<td><?php echo $tsc['total_pembelian'] ?></td>
+								<td><?php echo $tsc['alamat'] ?></td>
 
 								<td>
 									<a href="#" class="btn btn-primary">Detail</a>
