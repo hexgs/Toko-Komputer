@@ -16,12 +16,16 @@
 					<!-- <div class="form-group"> -->
 
 					<!-- <div class="col-md-5 col-sm-12 col-xs-12"> -->
+					<!-- <?php echo $error; ?> -->
+					<?php echo form_open_multipart('cart/uploadbukti'); ?>
 					<input type="file" name="foto">
-					<small class="form-text text-danger"><?= form_error('foto'); ?></small>
+					<!-- <small class="form-text text-danger"><?= form_error('foto'); ?></small> -->
 					<p class="help-text">* Ukuran Gambar Maximal 2 Mb.</p>
+					<!-- <input type="submit" value="upload" /> -->
+					<button class="btn btn-danger" type="submit" value="upload">Upload</button>
 					<!-- </div> -->
 					<!-- </div> -->
-					<a href="<?= base_url(); ?>cart/terimakasih" class="btn btn-danger">Submit</a>
+					<!-- <a href="<?= base_url(); ?>cart/terimakasih" class="btn btn-danger">Submit</a> -->
 				</div>
 
 			</div>
