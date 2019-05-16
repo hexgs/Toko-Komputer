@@ -33,11 +33,11 @@
 									$status = $user['status'];
 									if ($status == 1) {
 										?>
-										<button class="btn btn-success">Active</button>
+										<a href="user/updatestatus?id=<?php echo $user['id_pelanggan']; ?>&val=<?php echo $user['status']; ?>" class="btn btn-success">Active</a>
 									<?php
 								} else {
 									?>
-										<button class="btn btn-danger">InActive</button>
+										<a href="user/updatestatus?id=<?php echo $user['id_pelanggan']; ?>&val=<?php echo $user['status']; ?>" class="btn btn-danger">InActive</a>
 									<?php
 								} ?>
 								</td>
