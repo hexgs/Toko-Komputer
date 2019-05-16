@@ -32,13 +32,12 @@ class Transaction extends CI_Controller
         redirect('admin/transaction');
     }
 
-    public function detailTransaksi()
+    public function detailTransaksi($id)
     {
-        $id = $this->uri->segment(4);
-        $data['details'] = $this->Admin_model->getTsc($id);
+        $data['pembelian'] = $this->Admin_model->getTscById($id);
         $data['title'] = 'Transaction - Page';
         $data['judul'] = 'Detail Transaksi';
-        $data['content'] = 'admin/detailTransaksi';
+        $data['content'] = 'admin/detailtransaksi';
         $this->load->view('admin/templates/index', $data);
     }
 }
