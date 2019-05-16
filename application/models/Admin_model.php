@@ -55,6 +55,24 @@ class Admin_model extends CI_Model
         return $query->result_array();
     }
 
+    public function updateStatus()
+    {
+        $id = $_REQUEST['id'];
+        $vals = $_REQUEST['val'];
+
+        if ($vals == 1) {
+            $status = 0;
+        } else {
+            $status = 1;
+        }
+
+        $data = array(
+            'status' => $status
+        );
+        $this->db->where('id_pelanggan', $id);
+        return $this->db->update('pelanggan', $data);
+    }
+
 
 
 
