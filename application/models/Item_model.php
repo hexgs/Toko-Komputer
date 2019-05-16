@@ -70,15 +70,23 @@ class Item_model extends CI_model
             ->row();
     }
 
-    public function getAllItem(){
+    public function getAllItem()
+    {
 
         $query = $this->db->query('SELECT * FROM produk JOIN kategori_produk ON produk.id_kategori = kategori_produk.id_kategori');
-            
-        return $query->result_array();
 
+        return $query->result_array();
     }
 
-    public function getPelanggan(){
+    public function getPelanggan()
+    {
         $query = $this->db->query('');
+    }
+
+    public function cari($pilihKategori, $inputNamaProduk)
+    {
+        $this->db->from("produk");
+        $this->db->like($pilihKategori, $inputNamaProduk);
+        return $this->db->get();
     }
 }
