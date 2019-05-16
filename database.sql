@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2019 at 08:32 PM
+-- Generation Time: May 16, 2019 at 09:13 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -119,12 +119,12 @@ CREATE TABLE IF NOT EXISTS `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`id_pelanggan`, `email_pelanggan`, `password_pelanggan`, `nama_pelanggan`, `telepon`, `alamat`, `status`) VALUES
-(3, 'kevinrisqi22@gmail.com', 'kevinrisqi', 'Kevin Risqi Ramadhani', '08789439438', '', 0),
+(3, 'kevinrisqi22@gmail.com', 'kevinrisqi', 'Kevin Risqi Ramadhani', '08789439438', '', 1),
 (4, 'asd2@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'asd2', '123456789012', '', 1),
 (5, 'fervian@gmail.com', '46759d14d13f823e5fb35d5c45e3575e', 'fervian', '087702997565', '', 1),
 (6, 'rincember@gmail.com', '46759d14d13f823e5fb35d5c45e3575e', 'rincember', '087702997565', '', 1),
-(7, 'luffy@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'luffy', '087856437740', '', 0),
-(8, 'irhamm@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Irham', '087702997565', 'malang', 0);
+(7, 'luffy@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'luffy', '087856437740', '', 1),
+(8, 'irhamm@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Irham', '087702997565', 'malang', 1);
 
 -- --------------------------------------------------------
 
