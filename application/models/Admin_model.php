@@ -39,6 +39,13 @@ class Admin_model extends CI_Model
         return $query->result_array();
     }
 
+    public function getTscById($id = '')
+    {
+        $query = $this->db->query("SELECT * FROM pembelian JOIN pelanggan ON pelanggan.id_pelanggan = pembelian.id_pelanggan WHERE id_pembelian = '$id'");
+        // $this->db->get_where($table, array($key => $id))->result_array();
+        return $query->result_array();
+    }
+
     public function delete($id)
     {
         $this->db->delete('produk', ['id_produk' => $id]);
@@ -49,10 +56,9 @@ class Admin_model extends CI_Model
         $this->db->delete('pembelian', ['id_pembelian' => $id]);
     }
 
-    public function getTsc($id = '')
+    public function tampilDataPembeli()
     {
-        $query = $this->db->query("SELECT * FROM pembelian WHERE id_pembelian = '$id'");
-        return $query->result_array();
+        return $this->db->get('pembelian');
     }
 
     public function updateStatus()
