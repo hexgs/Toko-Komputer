@@ -37,7 +37,7 @@
 
 								<td>
 									<a href="<?php echo base_url(); ?>admin/transaction/detailtransaksi/<?php echo $tsc['id_pembelian'] ?>" class="btn btn-primary">Detail</a>
-									<a href="#" class="btn btn-warning">Upload Resi</a>
+									<a href="<?php echo base_url(); ?>admin/user/uploadresi/<?php echo $tsc['id_pembelian'] ?>" class="btn btn-warning">Upload Resi</a>
 									<!-- <a href="<?= base_url(); ?>admin/transaction/deleteitem/<?= $tsc['id_pembelian'] ?>" class="btn btn-danger tombol-hapus">Hapus</a> -->
 								</td>
 							</tr>
