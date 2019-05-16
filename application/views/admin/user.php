@@ -28,8 +28,10 @@
 								<td><?php echo $user['nama_pelanggan'] ?></td>
 								<td><?php echo $user['email_pelanggan'] ?></td>
 								<td><?php echo $user['telepon'] ?></td>
-								<!-- <td><?php echo $user['status'] ?></td> -->
-								<td></td>
+								<td>
+									<a href="#" class="btn btn-success">Active</a>
+									<a href="#" class="btn btn-default">Non-Active</a>
+								</td>
 							</tr>
 							<?php $nomor++; ?>
 						<?php endforeach; ?>

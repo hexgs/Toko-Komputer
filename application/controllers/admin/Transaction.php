@@ -31,4 +31,14 @@ class Transaction extends CI_Controller
         $this->session->set_flashdata('flash', 'Dihapus');
         redirect('admin/transaction');
     }
+
+    public function detailTransaksi()
+    {
+        $id = $this->uri->segment(4);
+        $data['details'] = $this->Admin_model->getTsc($id);
+        $data['title'] = 'Transaction - Page';
+        $data['judul'] = 'Detail Transaksi';
+        $data['content'] = 'admin/detailTransaksi';
+        $this->load->view('admin/templates/index', $data);
+    }
 }

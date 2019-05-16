@@ -12,7 +12,7 @@
 			<div class="box-body">
 				<?php foreach ($details as $detail) : ?>
 					<div class="col-md-5 col-sm-6">
-						<img src="<?= base_url('') ?>assets/img/product/<?= $detail['foto'] ?>">
+						<img src="<?= base_url('') ?>assets/front/img/<?= $detail['foto'] ?>" width="350px" height="350px">
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<table class="table table-striped">
@@ -24,10 +24,10 @@
 								<td>Harga</td>
 								<td>: Rp <?= number_format($detail['harga'], 0, ',', '.') ?></td>
 							</tr>
-							<tr>
-								<td>Status</td>
-								<td>: <?= $detail['status'] ?></td>
-							</tr>
+							<!-- <tr>
+														<td>Status</td>
+														<td>Unknown</td>
+													</tr> -->
 							<tr>
 								<td>Stok</td>
 								<td>: <?= $detail['stok'] ?></td>

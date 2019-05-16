@@ -1,9 +1,10 @@
-<?php   
+<?php
 
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin_model extends CI_Model {
+class Admin_model extends CI_Model
+{
 
     public function getJoinItem()
     {
@@ -20,7 +21,7 @@ class Admin_model extends CI_Model {
         $this->db->join('pelanggan', 'pelanggan.id_pelanggan = pembelian.id_pelanggan');
         return $query = $this->db->get()->result_array();
     }
-    
+
     public function getAll($table = '')
     {
         return $this->db->get($table)->result_array();
@@ -46,6 +47,12 @@ class Admin_model extends CI_Model {
     public function deleteTsc($id)
     {
         $this->db->delete('pembelian', ['id_pembelian' => $id]);
+    }
+
+    public function getTsc($id = '')
+    {
+        $query = $this->db->query("SELECT * FROM pembelian WHERE id_pembelian = '$id'");
+        return $query->result_array();
     }
 
 
@@ -78,7 +85,7 @@ class Admin_model extends CI_Model {
     // public function getAllItem()
     // {
     //     $query = $this->db->query('SELECT * FROM produk JOIN kategori_produk ON produk.id_kategori = kategori_produk.id_kategori');
-            
+
     //     return $query->result_array();
     // }
 
@@ -107,7 +114,7 @@ class Admin_model extends CI_Model {
     //                     "deskripsi" => $this->input->post('deskripsi',true),
     //                     "id_kategori" => $this->input->post('id_kategori',true)
     //                 ];
-        
+
     //         $this->db->insert('produk', $data);
     //         }
     // }
@@ -117,7 +124,7 @@ class Admin_model extends CI_Model {
     //     $this->db->where('id_produk', $id);
     //     $this->db->delete('produk');
     // }
-        
+
     // public function getItemById($id)
     // {
     //     return $this->db->get('produk', ['id_produk' => $id])->row_array();
@@ -128,7 +135,7 @@ class Admin_model extends CI_Model {
     //     $this->db->update('produk', ['id_produk' => $id]);
     // }
 
-    
+
 
 }
 
