@@ -29,8 +29,17 @@
 								<td><?php echo $user['email_pelanggan'] ?></td>
 								<td><?php echo $user['telepon'] ?></td>
 								<td>
-									<a href="#" class="btn btn-success">Active</a>
-									<a href="#" class="btn btn-default">Non-Active</a>
+									<?php
+									$status = $user['status'];
+									if ($status == 1) {
+										?>
+										<button class="btn btn-success">Active</button>
+									<?php
+								} else {
+									?>
+										<button class="btn btn-danger">InActive</button>
+									<?php
+								} ?>
 								</td>
 							</tr>
 							<?php $nomor++; ?>
