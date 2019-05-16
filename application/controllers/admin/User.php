@@ -40,4 +40,12 @@ class User extends CI_Controller
             return redirect('admin/user');
         }
     }
+
+    public function uploadResi()
+    {
+        $data['title'] = 'User Page';
+        $data['judul'] = 'Form Resi';
+        $data['content'] = 'admin/uploadresi';
+        $this->load->view('admin/templates/index', $data);
+    }
 }

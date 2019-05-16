@@ -13,9 +13,9 @@
 					<!-- <div class="form-group">
 						<label class="col-md-7 col-sm-6 col-xs-12">
 							<?php if (validation_errors()) : ?>
-								<div class="alert alert-danger" role="alert">
-									<?= validation_errors(); ?>
-								</div>
+									<div class="alert alert-danger" role="alert">
+										<?= validation_errors(); ?>
+									</div>
 							<?php endif; ?>
 						</label>
 
@@ -73,16 +73,16 @@
 						</div>
 
 						<!-- <div class="form-group">
-							<label class="control-label col-md-2 col-sm-2 col-xs-12">Status</label>
-							<div class="col-md-4 col-sm-6">
-								<select name="status" class="form-control">
-									<option value="">--Pilih Status--</option>
-									<option value="Active">Active</option>
-									<option value="Non Active">Non Active</option>
-								</select>
-								<small class="form-text text-danger"><?= form_error('status'); ?></small>
-							</div>
-						</div> -->
+								<label class="control-label col-md-2 col-sm-2 col-xs-12">Status</label>
+								<div class="col-md-4 col-sm-6">
+									<select name="status" class="form-control">
+										<option value="">--Pilih Status--</option>
+										<option value="Active">Active</option>
+										<option value="Non Active">Non Active</option>
+									</select>
+									<small class="form-text text-danger"><?= form_error('status'); ?></small>
+								</div>
+							</div> -->
 
 						<div class="form-group">
 							<label class="control-label col-md-2 col-sm-2 col-xs-12">Gambar
@@ -98,8 +98,8 @@
 							<label class="control-label col-md-2 col-sm-2 col-xs-12">Deskripsi</label>
 							<div class="col-md-9 col-sm-6">
 								<textarea class="form-control" rows="4" name="deskripsi">
-									<?= $item['deskripsi']; ?>
-								</textarea>
+										<?= $item['deskripsi']; ?>
+									</textarea>
 								<small class="form-text text-danger"><?= form_error('deskripsi'); ?></small>
 							</div>
 						</div>
