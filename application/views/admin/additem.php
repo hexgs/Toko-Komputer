@@ -13,9 +13,9 @@
 					<!-- <div class="form-group">
 						<label class="col-md-7 col-sm-6 col-xs-12">
 							<?php if (validation_errors()) : ?>
-								<div class="alert alert-danger" role="alert">
-									<?= validation_errors(); ?>
-								</div>
+									<div class="alert alert-danger" role="alert">
+										<?= validation_errors(); ?>
+									</div>
 							<?php endif; ?>
 						</label>
 
