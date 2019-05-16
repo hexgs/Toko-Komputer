@@ -22,4 +22,22 @@ class User extends CI_Controller
         $data['content'] = 'admin/user';
         $this->load->view('admin/templates/index', $data);
     }
+
+    public function updateStatus()
+    {
+        if (isset($_REQUEST['val'])) {
+            $this->load->model('Admin_model', 'pelanggan');
+
+            $up_stat = $this->pelanggan->updateStatus();
+
+            if ($up_stat > 0) {
+                $this->session->set_flashdata('msg', 'User Data Updated Successfully!');
+                $this->session->set_flashdata('msg_class', 'alert-success');
+            } else {
+                $this->session->set_flashdata('msg', 'User Data not Updated Successfully!');
+                $this->session->set_flashdata('msg_class', 'alert-danger');
+            }
+            return redirect('admin/user');
+        }
+    }
 }
