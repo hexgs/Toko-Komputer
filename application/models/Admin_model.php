@@ -153,14 +153,6 @@ class Admin_model extends CI_Model
     // {
     //     return $this->db->get('produk', ['id_produk' => $id])->row_array();
     // }
-
-    // public function updateItem($id)
-    // {
-    //     $this->db->update('produk', ['id_produk' => $id]);
-    // }
-
-
-
 }
 
 /* End of file Item_model.php */

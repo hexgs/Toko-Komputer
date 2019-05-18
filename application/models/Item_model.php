@@ -89,4 +89,10 @@ class Item_model extends CI_model
         $this->db->like($pilihKategori, $inputNamaProduk);
         return $this->db->get();
     }
+
+    public function updateData($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($data, $table);
+    }
 }

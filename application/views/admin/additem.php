@@ -13,14 +13,27 @@
 					<!-- <div class="form-group">
 						<label class="col-md-7 col-sm-6 col-xs-12">
 							<?php if (validation_errors()) : ?>
-									<div class="alert alert-danger" role="alert">
-										<?= validation_errors(); ?>
-									</div>
+											<div class="alert alert-danger" role="alert">
+												<?= validation_errors(); ?>
+											</div>
 							<?php endif; ?>
 						</label>
 
 					</div> -->
 
+					<div class="form-group">
+						<label class="control-label col-md-2 col-sm-2 col-xs-12">Kategori</label>
+						<div class="col-md-4 col-sm-6">
+							<select name="id_kategori" class="form-control">
+								<option value="">--Pilih Kategori--</option>
+								<?php foreach ($category as $kategori) : ?>
+									<option value="<?= $kategori['id_kategori'] ?>"><?= $kategori['nama_kategori'] ?>
+									</option>
+								<?php endforeach; ?>
+							</select>
+							<small class="form-text text-danger"><?= form_error('id_kategori'); ?></small>
+						</div>
+					</div>
 					<div class="form-group">
 						<label class="control-label col-md-2 col-sm-2 col-xs-12">Nama Item
 						</label>
@@ -58,19 +71,6 @@
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label class="control-label col-md-2 col-sm-2 col-xs-12">Kategori</label>
-						<div class="col-md-4 col-sm-6">
-							<select name="id_kategori" class="form-control">
-								<option value="">--Pilih Kategori--</option>
-								<?php foreach ($category as $kategori) : ?>
-									<option value="<?= $kategori['id_kategori'] ?>"><?= $kategori['nama_kategori'] ?>
-									</option>
-								<?php endforeach; ?>
-							</select>
-							<small class="form-text text-danger"><?= form_error('id_kategori'); ?></small>
-						</div>
-					</div>
 
 					<!-- <div class="form-group">
 						<label class="control-label col-md-2 col-sm-2 col-xs-12">Status</label>
