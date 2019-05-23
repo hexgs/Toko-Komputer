@@ -1,6 +1,7 @@
 <!-- <?php var_dump($pelanggan); ?> -->
 <!-- SECTION -->
 <div class="section">
+<form action="<?php echo site_url('cart/terimakasih'); ?>" method ="post">
 	<!-- container -->
 	<div class="container">
 		<!-- row -->
@@ -28,7 +29,8 @@
 						<input type="text" name="total_transfer" class="form-control" id="total_transfer" placeholder="Total Transfer" required>
 					</div>
 
-					<a href="<?= base_url(); ?>cart/checkout" class="btn btn-danger">Confirm</a>
+					<!-- <a href="<?= base_url(); ?>cart/checkout" class="btn btn-danger">Confirm</a> -->
+					<button type="submit" id="submit" class="btn btn-danger">Confirm</button>
 					<!-- <div class="form-group"> -->
 
 					<!-- <div class="col-md-5 col-sm-12 col-xs-12"> -->
@@ -48,5 +50,6 @@
 			<!-- /row -->
 		</div>
 		<!-- /container -->
+	</form>
 	</div>
 	<!-- /SECTION -->
