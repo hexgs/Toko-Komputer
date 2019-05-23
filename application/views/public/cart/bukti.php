@@ -1,3 +1,4 @@
+<!-- <?php var_dump($pelanggan); ?> -->
 <!-- SECTION -->
 <div class="section">
 	<!-- container -->
@@ -13,6 +14,11 @@
 					</div>
 					<p>Silahkan lakukan pembayaran ke rekening xxxxxx atas nama ZenAiKomputer.</p>
 					<p>Masukkan bukti pembayaran:</p>
+					<div class="form-group">
+						<textarea name="alamat" placeholder="alamat" class="form-control"></textarea>
+					</div>
+					
+
 					<!-- <div class="form-group"> -->
 
 					<!-- <div class="col-md-5 col-sm-12 col-xs-12"> -->
