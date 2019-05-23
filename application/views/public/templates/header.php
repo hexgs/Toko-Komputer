@@ -85,18 +85,7 @@
 					<div class="col-md-6">
 						<div class="header-search">
 							<?php echo form_open("home/cari") ?>
-							<select class="input-select" name="pilihKategori">
-								<option value="">All Categories</option>
-								<option value="1">VGA</option>
-								<option value="2">Harddisk</option>
-								<option value="3">Processor</option>
-								<option value="4">Monitor</option>
-								<option value="5">RAM</option>
-								<option value="6">SSD</option>
-								<option value="7">Motherboard</option>
-								<option value="8">CPU</option>
-							</select>
-							<input class="input" name="inputNamaProduk" placeholder="Search here">
+							<input class="input" name="keyword" placeholder="Search here">
 							<button class="search-btn" value="search">Search</button>
 							<?php echo form_close(); ?>
 						</div>
