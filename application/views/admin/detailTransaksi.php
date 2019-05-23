@@ -27,7 +27,18 @@
                             </tr>
                             <tr>
                                 <td>Bukti Pembayaran</td>
-                                <td>: <?= $pb['bukti_pembayaran'] ?></td>
+                            </tr>
+                            <tr>
+                                <td><li>Atas Nama : <?= $pb['atas_nama'] ?></td>
+                            </tr>
+                            <tr>
+                                <td><li>Nomor Rekening : <?= $pb['no_rekening'] ?></td>
+                            </tr>
+                            <tr>
+                                <td><li>Jenis Bank : <?= $pb['jenis_bank'] ?></td>
+                            </tr>
+                            <tr>
+                                <td><li>Total Transfer : <?= $pb['total_transfer'] ?></td>
                             </tr>
                         </table>
                         <a href="#" class="btn btn-default" onclick="window.history.go(-1)">Kembali</a>
