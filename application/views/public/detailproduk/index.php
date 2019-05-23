@@ -37,14 +37,6 @@
                 <p><?= $detail_produk->deskripsi; ?></p>
 
                 <div class="add-to-cart">
-                    <div class="qty-label">
-                        Qty
-                        <div class="input-number">
-                            <input type="number">
-                            <span class="qty-up">+</span>
-                            <span class="qty-down">-</span>
-                        </div>
-                    </div>
                     <button class="add-to-cart-btn" onclick="window.location.href = '<?= base_url(); ?>cart/addCart/<?= $detail_produk->id_produk; ?>';"><i class="fa fa-shopping-cart"></i> add to cart</button>
                 </div>
 
