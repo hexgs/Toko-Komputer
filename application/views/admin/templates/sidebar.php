@@ -7,7 +7,7 @@
         <img src="<?= base_url('') ?>assets/img/admin/User-icon.png" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p>Administrator</p>
+        <p><?= ($_SESSION['name']) ?></p>
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>
