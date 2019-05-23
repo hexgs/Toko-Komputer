@@ -33,7 +33,6 @@
 								<td><?php echo $tsc['tanggal_pembelian'] ?></td>
 								<td><?php echo $tsc['total_pembelian'] ?></td>
 								<td><?php echo $tsc['alamat'] ?></td>
-								<td><?php echo $tsc['bukti_pembayaran'] ?></td>
 
 								<td>
 									<a href="<?php echo base_url(); ?>admin/transaction/detailtransaksi/<?php echo $tsc['id_pembelian'] ?>" class="btn btn-primary">Detail</a>
