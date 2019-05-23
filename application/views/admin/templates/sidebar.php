@@ -7,8 +7,13 @@
         <img src="<?= base_url('') ?>assets/img/admin/User-icon.png" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p><?= ($_SESSION['name']) ?></p>
-        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        <?php if (isset($_SESSION['email'])) { ?>
+          <p><?= ($_SESSION['name']) ?></p>
+          <a><i class="fa fa-circle text-success"></i> Online</a>
+        <?php } else { ?>
+          <p>Anon</p>
+          <a><i class="fa fa-circle text-failed"></i> Offline</a>
+        <?php } ?>
       </div>
     </div>
     <!-- search form -->
