@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2019 at 08:33 PM
+-- Generation Time: May 23, 2019 at 09:03 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `is_active` int(1) NOT NULL,
   `date_created` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `admin`
@@ -48,7 +48,8 @@ INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_
 (5, 'administrator', 'admin@gmail.com', 'default.jpg', '$2y$10$OdCphOMLJ7hUW3AMTVwMZuRWfASkU0rkylBKSKbkuFRBv7j719RJ.', 1, 1, 1552633709),
 (6, 'admin3', 'admin3@gmail.com', 'default.jpg', '$2y$10$6F4EQSlV3XzzCp/INJyEfO5miVQFOQpgsjlRDR98tHb.aaRxZ0hFC', 1, 1, 1552634564),
 (7, 'admin99', 'admin99@gmail.com', 'default.jpg', '$2y$10$Ho16p9V90o6fesCJvydfWORmtZuReOq3af99T4gFZbxcrMuXm0..C', 1, 1, 1552635954),
-(8, 'admin33', 'admin33@gmail.com', 'default.jpg', '$2y$10$yb8LJv.EeCs1p89nEMVuLO2Yj65J6HqIsYdRPf/AmzPugXTH9RfMS', 1, 1, 1552636067);
+(8, 'admin33', 'admin33@gmail.com', 'default.jpg', '$2y$10$yb8LJv.EeCs1p89nEMVuLO2Yj65J6HqIsYdRPf/AmzPugXTH9RfMS', 1, 1, 1552636067),
+(9, 'Irham Rizaldy', 'irhamrizaldy@gmail.com', 'default.jpg', '$2y$10$9Ci65lqG9/a24D.Eu2t.Ruen2Exi1CqFsrqzxbY.AaMjtdSkkqqyi', 1, 1, 1558637207);
 
 -- --------------------------------------------------------
 
@@ -112,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `pelanggan` (
   `alamat` text NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id_pelanggan`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `pelanggan`
@@ -125,7 +126,8 @@ INSERT INTO `pelanggan` (`id_pelanggan`, `email_pelanggan`, `password_pelanggan`
 (6, 'rincember@gmail.com', '46759d14d13f823e5fb35d5c45e3575e', 'rincember', '087702997565', '', 1),
 (7, 'luffy@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'luffy', '087856437740', '', 1),
 (8, 'irhamm@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Irham', '087702997565', 'malang', 1),
-(10, 'yoga@gmail.com', '807659cd883fc0a63f6ce615893b3558', 'yoga', '082187783567', 'soroako', 1);
+(10, 'yoga@gmail.com', '807659cd883fc0a63f6ce615893b3558', 'yoga', '082187783567', 'soroako', 1),
+(11, 'wibu@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'wibu', '123456789012', '', 1);
 
 -- --------------------------------------------------------
 
@@ -142,94 +144,23 @@ CREATE TABLE IF NOT EXISTS `pembelian` (
   `alamat` varchar(255) NOT NULL,
   `atas_nama` varchar(255) DEFAULT NULL,
   `no_rekening` int(11) NOT NULL,
-  `jenis_bank` int(11) NOT NULL,
+  `jenis_bank` varchar(255) NOT NULL,
   `total_transfer` int(11) NOT NULL,
   PRIMARY KEY (`id_pembelian`),
   KEY `id_ongkir` (`id_ongkir`),
   KEY `id_pelanggan` (`id_pelanggan`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=105 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=107 ;
 
 --
 -- Dumping data for table `pembelian`
 --
 
 INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `atas_nama`, `no_rekening`, `jenis_bank`, `total_transfer`) VALUES
-(4, 3, 1, '2019-04-11', 14850000, '', '', 0, 0, 0),
-(18, 5, 1, '2019-05-03', 785000, '', '', 0, 0, 0),
-(22, 8, 1, '2019-05-09', 6500000, '', '', 0, 0, 0),
-(23, 8, 1, '2019-05-09', 12250000, '', '', 0, 0, 0),
-(24, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(25, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(26, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(27, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(28, 8, 1, '2019-05-09', 6500000, '', '', 0, 0, 0),
-(29, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(30, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(31, 8, 1, '2019-05-09', 2200000, '', '', 0, 0, 0),
-(32, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(34, 8, 1, '2019-05-09', 6500000, '', '', 0, 0, 0),
-(36, 8, 1, '2019-05-09', 2200000, '', '', 0, 0, 0),
-(38, 8, 1, '2019-05-09', 6500000, '', '', 0, 0, 0),
-(39, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(40, 8, 1, '2019-05-09', 12250000, '', '', 0, 0, 0),
-(41, 8, 1, '2019-05-09', 2200000, '', '', 0, 0, 0),
-(42, 8, 1, '2019-05-09', 12250000, '', '', 0, 0, 0),
-(43, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(44, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(45, 8, 1, '2019-05-09', 0, '', '', 0, 0, 0),
-(46, 8, 1, '2019-05-09', 13000000, '', '', 0, 0, 0),
-(47, 10, 1, '2019-05-23', 25285000, '', '', 0, 0, 0),
-(48, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(49, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(50, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(51, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(52, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(53, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(54, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(55, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(56, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(57, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(58, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(59, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(60, 10, 1, '2019-05-23', 0, '', '', 0, 0, 0),
-(61, 10, 1, '2019-05-23', 6500000, '', '', 0, 0, 0),
-(62, 10, 1, '2019-05-23', 1558000, '', NULL, 0, 0, 0),
-(63, 10, 1, '2019-05-23', 2600000, '', NULL, 0, 0, 0),
-(64, 10, 1, '2019-05-23', 6500000, '', NULL, 0, 0, 0),
-(65, 10, 1, '2019-05-23', 6500000, '', NULL, 0, 0, 0),
-(66, 10, 1, '2019-05-23', 6500000, '', NULL, 0, 0, 0),
-(67, 10, 1, '2019-05-23', 0, '', NULL, 0, 0, 0),
-(68, 10, 1, '2019-05-23', 0, '', NULL, 0, 0, 0),
-(69, 10, 1, '2019-05-23', 0, '', NULL, 0, 0, 0),
-(70, 10, 1, '2019-05-23', 2600000, '', NULL, 0, 0, 0),
-(71, 10, 1, '2019-05-23', 0, '', NULL, 0, 0, 0),
-(72, 10, 1, '2019-05-23', 12250000, '', NULL, 0, 0, 0),
-(73, 10, 1, '2019-05-23', 6500000, '', NULL, 0, 0, 0),
-(74, 10, 1, '2019-05-23', 24500000, '', NULL, 0, 0, 0),
-(75, 10, 1, '2019-05-23', 13000000, '', NULL, 0, 0, 0),
-(76, 10, 1, '2019-05-23', 6500000, 'asd', NULL, 0, 0, 0),
-(77, 10, 1, '2019-05-23', 5000, 'dfgdg', NULL, 0, 0, 0),
-(78, 10, 1, '2019-05-23', 0, 'ththt', NULL, 0, 0, 0),
-(79, 10, 1, '2019-05-23', 0, 'ththtasdsad', NULL, 0, 0, 0),
-(80, 10, 1, '2019-05-23', 6500000, 'malang', NULL, 0, 0, 0),
-(85, 10, 1, '2019-05-23', 6500000, '', NULL, 0, 0, 0),
-(87, 10, 1, '2019-05-23', 1558000, 'malang', NULL, 0, 0, 0),
-(89, 10, 1, '2019-05-23', 1558000, 'dsa', NULL, 0, 0, 0),
-(90, 10, 0, '0000-00-00', 0, '', 'yogaibnu', 1212121212, 0, 2432424),
-(91, 10, 1, '2019-05-23', 5000, 'adasd', NULL, 0, 0, 0),
-(92, 10, 0, '0000-00-00', 0, '', 'yogaibnu', 1212121212, 0, 2432424),
-(93, 10, 1, '2019-05-23', 13000000, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(94, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(95, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(96, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(97, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(98, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(99, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(100, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, 0, 2432424),
-(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, 0, 2432424);
+(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
+(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
+(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
+(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, '0', 2432424),
+(106, 11, 1, '2019-05-23', 6500000, '', 'Wibu', 1741720103, 'BNI', 0);
 
 -- --------------------------------------------------------
 
