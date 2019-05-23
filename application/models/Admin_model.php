@@ -80,9 +80,23 @@ class Admin_model extends CI_Model
     }
 
     public function getCountOrder(){
-        return $query = $this->db->query("SELECT COUNT(*)
-        FROM pembelian");
+        // return $query = $this->db->query("SELECT COUNT(*)
+        // FROM pembelian");
+        $this->db->select('pembelian.id_pembelian, count(pembelian.id_pembelian) as total'); 
     }
+
+    // function hitungDataAssetTiapKategori()
+    // {  
+    //     $this->db->select('tb_kategori.kategori, count(tb_kategori.kategori) as total'); 
+    //     $this->db->join('tb_model','tb_asset.model = tb_model.id');
+    //     $this->db->join('tb_kategori', 'tb_model.kategori = tb_kategori.id'); 
+    //     $this->db->group_by('kategori');
+    //     $query = $this->db->get('tb_asset');
+    //     if($query->num_rows()>0)
+    //     {
+    //     return $query->result();
+    //     }
+    // }
 
 
 

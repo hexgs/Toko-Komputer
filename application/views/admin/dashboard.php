@@ -1,10 +1,12 @@
 <!-- <?php var_dump($pembelian); ?> -->
 <div class="row">
+<?php foreach ($order as $order) : ?>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3><?php echo $Order?></h3>
+              
+              <!-- <h3><?php echo $order?></h3> -->
 
               <p>Orders</p>
             </div>
@@ -20,6 +22,7 @@
           <div class="small-box bg-green">
             <div class="inner">
               <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <?php endforeach; ?>
 
               <p>User Registrations</p>
             </div>
