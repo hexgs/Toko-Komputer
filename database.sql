@@ -269,6 +269,7 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 -- Constraints for table `pembelian`
 --
 ALTER TABLE `pembelian`
+  ADD CONSTRAINT `pembelian_ibfk_1` FOREIGN KEY (`id_ongkir`) REFERENCES `ongkir` (`id_ongkir`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `pembelian_ibfk_2` FOREIGN KEY (`id_pelanggan`) REFERENCES `pelanggan` (`id_pelanggan`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --

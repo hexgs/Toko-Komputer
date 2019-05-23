@@ -19,8 +19,8 @@
 							<th>Tanggal Pembelian</th>
 							<th>Total Pembelian</th>
 							<th>Alamat</th>
+							<th>Bukti Pembayaran</th>
 							<th>Aksi</th>
-							<th>Status</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -33,23 +33,12 @@
 								<td><?php echo $tsc['tanggal_pembelian'] ?></td>
 								<td><?php echo $tsc['total_pembelian'] ?></td>
 								<td><?php echo $tsc['alamat'] ?></td>
+								<td><?php echo $tsc['bukti_pembayaran'] ?></td>
 
 								<td>
 									<a href="<?php echo base_url(); ?>admin/transaction/detailtransaksi/<?php echo $tsc['id_pembelian'] ?>" class="btn btn-primary">Detail</a>
 									<a href="<?php echo base_url(); ?>admin/user/uploadresi/<?php echo $tsc['id_pembelian'] ?>" class="btn btn-warning">Upload Resi</a>
-								</td>
-								<td>
-									<?php
-									$status = $tsc['total_transfer'];
-									if ($status > 0) {
-										?>
-										<a class="btn btn-success">Complete</a>
-									<?php
-								} else {
-									?>
-										<a class="btn btn-danger">Pending</a>
-									<?php
-								} ?>
+									<!-- <a href="<?= base_url(); ?>admin/transaction/deleteitem/<?= $tsc['id_pembelian'] ?>" class="btn btn-danger tombol-hapus">Hapus</a> -->
 								</td>
 							</tr>
 							<?php $nomor++; ?>

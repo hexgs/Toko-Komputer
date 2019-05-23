@@ -27,8 +27,8 @@
 </form> -->
 <br>
 <div class="container">
-  <!-- <div class="row content-center"> -->
-    <!-- <div class="col-md"> -->
+  <div class="row content-center">
+    <div class="col-md">
       <div class="imgcontainer">
         <center><img style="width:150px;height:150px;" src="<?= base_url(); ?>assets/FRONT/img/default.png" alt=""></center>
       </div>
@@ -46,19 +46,19 @@
       <?php } ?>
       <?php echo form_open('login/dologin'); ?>
 
-      <div class="form-group" class="col-md-6 offset-md-3">
+      <div class="form-group">
         <input type="text" name="email_pelanggan" class="form-control" id="email_pelanggan" placeholder="Email" required>
       </div>
-      <div class="form-group" class="col-md-6 offset-md-3">
+      <div class="form-group">
         <input type="password" name="password_pelanggan" class="form-control" id="password_pelanggan" placeholder="Password" required>
       </div>
       <div class="form-group pull-right">
         <button type="submit" id="login" class="btn btn-primary">Login</button>
       </div>
 
-    <!-- </div> -->
+    </div>
 
     <?php echo form_close(); ?>
 
-  <!-- </div> -->
+  </div>
 </div>
