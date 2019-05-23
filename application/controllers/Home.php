@@ -20,11 +20,9 @@ class Home extends CI_Controller
 
     public function cari()
     {
-		$keyword = $this->input->post('keyword');
-		$data['produk']= $this->Item_model->get_keyword($keyword);
-		$data['jumlah'] = count($data['produk']);
-		$this->load->view('public/templates/header');
-		$this->load->view('public/home/searchresult', $data);
-		$this->load->view('public/templates/footer');
-	}
+        $data['pilihKategori'] = $this->input->post("pilihKategori");
+        $data['inputNamaProduk'] = $this->input->post("inputNamaProduk");
+
+        $data['produk'] = $this->Item_model->cari($data['pilihKategori'], $data['inputNamaProduk'])->result();
+    }
 }

@@ -83,12 +83,11 @@ class Item_model extends CI_model
         $query = $this->db->query('');
     }
 
-    public function get_keyword($data)
+    public function cari($pilihKategori, $inputNamaProduk)
     {
-		$this->db->select('*');
-		$this->db->from('produk');
-		$this->db->like('nama_produk', $data);
-		return $this->db->get()->result_array();
+        $this->db->from("produk");
+        $this->db->like($pilihKategori, $inputNamaProduk);
+        return $this->db->get();
     }
 
     public function updateData($where, $data, $table)

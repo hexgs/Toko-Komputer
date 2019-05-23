@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-Class Home extends CI_Controller {
+class Home extends CI_Controller
+{
 
     public function __construct()
     {
@@ -15,7 +16,6 @@ Class Home extends CI_Controller {
         $data['content'] = 'admin/dashboard';
         $data['judul'] = 'Dashboard';
         $data['title'] = 'Dashboard - Page';
-        $this->load->view('admin/templates/index',$data);
+        $this->load->view('admin/templates/index', $data);
     }
-
 }
