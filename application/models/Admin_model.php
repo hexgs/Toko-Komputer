@@ -88,6 +88,15 @@ class Admin_model extends CI_Model
         }
     }
 
+    public function getCountUser(){
+        $this->db->select('pelanggan.id_pembelian, count(pelanggan.id_pembelian) as total'); 
+        $query = $this->db->get('pelanggan');
+        if($query->num_rows()>0)
+        {
+        return $query->result();
+        }
+    }
+
 
 
 
