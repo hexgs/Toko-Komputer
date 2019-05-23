@@ -11,10 +11,54 @@ class Auth extends CI_Controller
 
     public function index()
     {
-        $data['title'] = 'Login Admin';
-        $this->load->view('admin/login_form/templates/auth_header', $data);
-        $this->load->view('admin/login_form/login');
-        $this->load->view('admin/login_form/templates/auth_footer');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required');
+
+        if ($this->form_validation->run() == false) {
+            $data['title'] = 'Login Admin';
+            $this->load->view('admin/login_form/templates/auth_header', $data);
+            $this->load->view('admin/login_form/login');
+            $this->load->view('admin/login_form/templates/auth_footer');
+        } else {
+            // validation success
+            $this->_login();
+        }
+    }
+
+    private function _login()
+    {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+
+        $admin = $this->db->get_where('admin', ['email' => $email])->row_array();
+
+        // jika adminnya ada
+        if ($admin) {
+            // jika adminnya aktif
+            if ($admin['is_active'] == 1) {
+                // cek passwordnya
+                if (password_verify($password, $admin['password'])) {
+                    $data = [
+                        'name' => $admin['name'],
+                        'email' => $admin['email']
+                    ];
+                    $this->session->set_userdata($data);
+                    redirect('admin');
+                } else {
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
+                    Wrong password!</div>');
+                    redirect('admin/login_admin/auth');
+                }
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
+                This email has not been activated!</div>');
+                redirect('admin/login_admin/auth');
+            }
+        } else {
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
+            Email is not registered!</div>');
+            redirect('admin/login_admin/auth');
+        }
     }
 
     public function registration()
