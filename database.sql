@@ -3,7 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: May 18, 2019 at 08:17 AM
+=======
+-- Generation Time: May 23, 2019 at 09:03 PM
+>>>>>>> f02020a25de2cf7d112dd48562f4246b47b26767
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -38,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `is_active` int(1) NOT NULL,
   `date_created` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `admin`
@@ -48,7 +52,8 @@ INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_
 (5, 'administrator', 'admin@gmail.com', 'default.jpg', '$2y$10$OdCphOMLJ7hUW3AMTVwMZuRWfASkU0rkylBKSKbkuFRBv7j719RJ.', 1, 1, 1552633709),
 (6, 'admin3', 'admin3@gmail.com', 'default.jpg', '$2y$10$6F4EQSlV3XzzCp/INJyEfO5miVQFOQpgsjlRDR98tHb.aaRxZ0hFC', 1, 1, 1552634564),
 (7, 'admin99', 'admin99@gmail.com', 'default.jpg', '$2y$10$Ho16p9V90o6fesCJvydfWORmtZuReOq3af99T4gFZbxcrMuXm0..C', 1, 1, 1552635954),
-(8, 'admin33', 'admin33@gmail.com', 'default.jpg', '$2y$10$yb8LJv.EeCs1p89nEMVuLO2Yj65J6HqIsYdRPf/AmzPugXTH9RfMS', 1, 1, 1552636067);
+(8, 'admin33', 'admin33@gmail.com', 'default.jpg', '$2y$10$yb8LJv.EeCs1p89nEMVuLO2Yj65J6HqIsYdRPf/AmzPugXTH9RfMS', 1, 1, 1552636067),
+(9, 'Irham Rizaldy', 'irhamrizaldy@gmail.com', 'default.jpg', '$2y$10$9Ci65lqG9/a24D.Eu2t.Ruen2Exi1CqFsrqzxbY.AaMjtdSkkqqyi', 1, 1, 1558637207);
 
 -- --------------------------------------------------------
 
@@ -112,7 +117,11 @@ CREATE TABLE IF NOT EXISTS `pelanggan` (
   `alamat` text NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id_pelanggan`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+=======
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+>>>>>>> f02020a25de2cf7d112dd48562f4246b47b26767
 
 --
 -- Dumping data for table `pelanggan`
@@ -124,7 +133,13 @@ INSERT INTO `pelanggan` (`id_pelanggan`, `email_pelanggan`, `password_pelanggan`
 (5, 'fervian@gmail.com', '46759d14d13f823e5fb35d5c45e3575e', 'fervian', '087702997565', '', 1),
 (6, 'rincember@gmail.com', '46759d14d13f823e5fb35d5c45e3575e', 'rincember', '087702997565', '', 1),
 (7, 'luffy@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'luffy', '087856437740', '', 1),
+<<<<<<< HEAD
 (8, 'irhamm@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Irham', '087702997565', 'malang', 1);
+=======
+(8, 'irhamm@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Irham', '087702997565', 'malang', 1),
+(10, 'yoga@gmail.com', '807659cd883fc0a63f6ce615893b3558', 'yoga', '082187783567', 'soroako', 1),
+(11, 'wibu@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'wibu', '123456789012', '', 1);
+>>>>>>> f02020a25de2cf7d112dd48562f4246b47b26767
 
 -- --------------------------------------------------------
 
@@ -138,17 +153,30 @@ CREATE TABLE IF NOT EXISTS `pembelian` (
   `id_ongkir` int(11) NOT NULL,
   `tanggal_pembelian` date NOT NULL,
   `total_pembelian` int(11) NOT NULL,
+<<<<<<< HEAD
   `alamat` varchar(255) DEFAULT NULL,
   `bukti_pembayaran` int(11) NOT NULL,
   PRIMARY KEY (`id_pembelian`),
   KEY `id_ongkir` (`id_ongkir`),
   KEY `id_pelanggan` (`id_pelanggan`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
+=======
+  `alamat` varchar(255) NOT NULL,
+  `atas_nama` varchar(255) DEFAULT NULL,
+  `no_rekening` int(11) NOT NULL,
+  `jenis_bank` varchar(255) NOT NULL,
+  `total_transfer` int(11) NOT NULL,
+  PRIMARY KEY (`id_pembelian`),
+  KEY `id_ongkir` (`id_ongkir`),
+  KEY `id_pelanggan` (`id_pelanggan`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=107 ;
+>>>>>>> f02020a25de2cf7d112dd48562f4246b47b26767
 
 --
 -- Dumping data for table `pembelian`
 --
 
+<<<<<<< HEAD
 INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `bukti_pembayaran`) VALUES
 (4, 3, 1, '2019-04-11', 14850000, '', 0),
 (18, 5, 1, '2019-05-03', 785000, NULL, 0),
@@ -174,6 +202,14 @@ INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_p
 (44, 8, 1, '2019-05-09', 0, NULL, 0),
 (45, 8, 1, '2019-05-09', 0, NULL, 0),
 (46, 8, 1, '2019-05-09', 13000000, NULL, 0);
+=======
+INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `atas_nama`, `no_rekening`, `jenis_bank`, `total_transfer`) VALUES
+(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
+(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
+(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
+(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, '0', 2432424),
+(106, 11, 1, '2019-05-23', 6500000, '', 'Wibu', 1741720103, 'BNI', 0);
+>>>>>>> f02020a25de2cf7d112dd48562f4246b47b26767
 
 -- --------------------------------------------------------
 
