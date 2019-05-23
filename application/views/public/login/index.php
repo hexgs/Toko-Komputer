@@ -41,7 +41,7 @@
       <?php } ?>
       <?php if ($this->input->get('msg') == 1) { ?>
         <div class="alert alert-danger">
-          Please Enter Your Valid Information.
+          Your account was blocked by Administrator.
         </div>
       <?php } ?>
       <?php echo form_open('login/dologin'); ?>
