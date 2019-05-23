@@ -40,18 +40,18 @@
           <i class="fa fa-users"></i>
           <span>User Management</span>
         </a>
-      </li>
+        <!-- </li>
       <li class="">
         <a href="<?= base_url() ?>admin/report">
           <i class="fa fa-book"></i>
           <span>Report</span>
         </a>
-      </li>
+      </li> -->
 
 
-      <li class="header">SETTING</li>
+        <!-- <li class="header">SETTING</li>
       <li><a href="#"><i class="fa fa-gears"></i> <span>Edit Profile</span></a></li>
-    </ul>
+    </ul> -->
   </section>
   <!-- /.sidebar -->
 </aside>

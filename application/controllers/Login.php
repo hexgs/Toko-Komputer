@@ -60,6 +60,7 @@ class Login extends CI_Controller
 						'nama_pelanggan' => $row->nama_pelanggan,
 						'email_pelanggan' => $row->email_pelanggan,
 						'telepon' => $row->telepon,
+						'status',
 						'is_authenticated' => TRUE,
 					);
 					$this->session->set_userdata($sessArray);
