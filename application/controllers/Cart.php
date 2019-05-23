@@ -83,7 +83,9 @@ class Cart extends CI_Controller
                 'total_pembelian' => $this->cart->total(),
                 'alamat' => $this->input->post('alamat')
             );
-            $order = $this->Order_model->create($order);
+            // $order = $this->Order_model->create($order);
+            // $this->db->insert('pembelian', $order);
+            $this->Order_model->create($order);
 
             // save order detail
             // foreach ($this->cart->contents() as $items) {
@@ -117,16 +119,29 @@ class Cart extends CI_Controller
         }
     }
 
+    
+    public function bukti()
+    {
+        if ($this->session->userdata('email_pelanggan') == null) {
+            redirect('login/login');
+        } else {
+            $data['judul'] = 'Toko Komputer';
+            $this->load->view('public/templates/header', $data);
+            $this->load->view('public/cart/bukti');
+            $this->load->view('public/templates/footer');
+        }
+    }
+
     public function terimakasih()
     {
-        $order = array(
-            'id_pelanggan' => $this->session->userdata('id_pelanggan'),
-            'atas_nama' => $this->input->post('atas_nama'),
-            'no_rekening' => $this->input->post('no_rekening'),
-            'jenis_bank' => $this->input->post('jenis_bank'),
-            'total_transfer' => $this->input->post('total_transfer')
-        );
-        $order = $this->Order_model->create($order);
+        // $order = array(
+        //     'id_pelanggan' => $this->session->userdata('id_pelanggan'),
+        //     'atas_nama' => $this->input->post('atas_nama'),
+        //     'no_rekening' => $this->input->post('no_rekening'),
+        //     'jenis_bank' => $this->input->post('jenis_bank'),
+        //     'total_transfer' => $this->input->post('total_transfer')
+        // );
+        // $order = $this->Order_model->create($order);
 
         $data['judul'] = 'Toko Komputer';
         $this->load->view('public/templates/header', $data);

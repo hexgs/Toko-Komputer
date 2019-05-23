@@ -1,9 +1,9 @@
 <!-- <?php $this->session->userdata() ?> -->
 <!-- <?php var_dump($pelanggan); ?> -->
 
-
 <!-- SECTION -->
 <div class="section">
+	<form action="<?php echo site_url('cart/checkout'); ?>" method ="post">
 	<!-- container -->
 	<div class="container">
 		<!-- row -->
@@ -24,17 +24,27 @@
 					<!-- <div class="form-group">
 								<input type="number" readonly value="<?php echo $this->session->userdata('telepon'); ?>" class="form-control">
 							</div> -->
+
+					
+
 					<div class="form-group">
 						<textarea name="alamat" placeholder="alamat" class="form-control"></textarea>
 					</div>
+
+					<!-- <div class="form-group">
+						<input type="text" name="atas_nama" class="form-control" placeholder="Nama">
+					</div> -->
+
 					<!-- /Billing Details -->
 					<a href="<?= base_url(); ?>cart/index" class="btn btn-default">Kembali</a>
-					<a href="<?= base_url(); ?>cart/checkout" class="btn btn-danger">Checkout</a>
+					<!-- <a href="<?= base_url(); ?>cart/checkout" class="btn btn-danger">Checkout</a> -->
+					<button type="submit" id="submit" class="btn btn-danger">Checkout</button>
 				</div>
 
 			</div>
 			<!-- /row -->
 		</div>
 		<!-- /container -->
+		</form>
 	</div>
 	<!-- /SECTION -->

@@ -28,7 +28,7 @@
 						<input type="text" name="total_transfer" class="form-control" id="total_transfer" placeholder="Total Transfer" required>
 					</div>
 
-					<a href="<?= base_url(); ?>cart/terimakasih" class="btn btn-danger">Confrim</a>
+					<a href="<?= base_url(); ?>cart/checkout" class="btn btn-danger">Confirm</a>
 					<!-- <div class="form-group"> -->
 
 					<!-- <div class="col-md-5 col-sm-12 col-xs-12"> -->
