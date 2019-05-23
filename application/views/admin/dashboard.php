@@ -1,4 +1,4 @@
-<?php var_dump($pelanggan); ?>
+<!-- <?php var_dump($pelanggan); ?> -->
 <?php 
   if($pembelian)
   {
@@ -22,16 +22,22 @@
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
 <?php
   }
 }
 ?>
 
+<?php 
+  if($pelanggan)
+  {
+   foreach ($pelanggan as $total) 
+  { 
+?>
+    <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+            <h3><?php echo $total->total?></h3>
               <p>User Registrations</p>
             </div>
             <div class="icon">
@@ -42,3 +48,7 @@
         </div>
 
       </div>
+      <?php
+  }
+}
+?>
