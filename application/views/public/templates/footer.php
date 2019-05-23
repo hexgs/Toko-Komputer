@@ -10,7 +10,7 @@
 								<div class="col-md-3 col-xs-6">
 									<div class="footer">
 										<h3 class="footer-title">About Us</h3>
-										<p>Toko kami merupakan salah satu toko komputer terbesar yang ada di Indonesia.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 										<ul class="footer-links">
 											<li><i class="fa fa-map-marker"></i>Jalan Sawojajar</li>
 											<li><i class="fa fa-phone"></i>+021-95-51-84</li>

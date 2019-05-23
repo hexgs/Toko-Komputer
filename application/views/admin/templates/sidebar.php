@@ -7,7 +7,7 @@
         <img src="<?= base_url('') ?>assets/img/admin/User-icon.png" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p><?= ($_SESSION['name']) ?></p>
+        <p>Administrator</p>
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>
@@ -49,9 +49,9 @@
       </li> -->
 
 
-        <!-- <li class="header">SETTING</li>
+      <li class="header">SETTING</li>
       <li><a href="#"><i class="fa fa-gears"></i> <span>Edit Profile</span></a></li>
-    </ul> -->
+    </ul>
   </section>
   <!-- /.sidebar -->
 </aside>
