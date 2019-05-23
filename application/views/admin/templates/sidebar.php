@@ -49,9 +49,9 @@
       </li> -->
 
 
-      <li class="header">SETTING</li>
+        <!-- <li class="header">SETTING</li>
       <li><a href="#"><i class="fa fa-gears"></i> <span>Edit Profile</span></a></li>
-    </ul>
+    </ul> -->
   </section>
   <!-- /.sidebar -->
 </aside>
