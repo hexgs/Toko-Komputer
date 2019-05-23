@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2019 at 09:13 PM
+-- Generation Time: May 18, 2019 at 08:17 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -208,7 +208,7 @@ CREATE TABLE IF NOT EXISTS `produk` (
   `deskripsi` text NOT NULL,
   PRIMARY KEY (`id_produk`),
   KEY `id_kategori` (`id_kategori`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
 --
 -- Dumping data for table `produk`
@@ -224,7 +224,8 @@ INSERT INTO `produk` (`id_produk`, `id_kategori`, `nama_produk`, `harga`, `stok`
 (11, 5, 'RAM DDR4 SODimm 8GB V-GeN PC-21300 2666MHz - Memory Laptop 8 GB VGeN', 848000, 12, 22, 'ramddr4.jpg', 'Hello World!'),
 (12, 6, 'SSD Solid State Drive V-GeN 480GB SATA 3 SSD VGEN 480 GB', 780000, 2, 10, 'ssdvgen.jpg', 'Hello World!'),
 (13, 7, 'Motherboard Asrock H110M-HDV - DDR4', 785000, 11, 30, 'mother.jpg', 'Hello World!'),
-(14, 8, 'Core i5-CPU Core i5-DDR 8GB-HDD 500GB', 2375000, 1, 32, 'corei5.jpg', 'Hello World!');
+(14, 8, 'Core i5-CPU Core i5-DDR 8GB-HDD 500GB', 2375000, 1, 32, 'corei5.jpg', 'Hello World!'),
+(34, 2, 'Hdd', 5000, 10, 12, '1_Dota2-Terrorblade.jpg', 'Hdd');
 
 -- --------------------------------------------------------
 
