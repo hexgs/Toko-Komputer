@@ -135,6 +135,7 @@ class Cart extends CI_Controller
     public function terimakasih()
     {
         $order = array(
+            'id_pelanggan' => $this->session->userdata('id_pelanggan'),
             'atas_nama' => $this->input->post('atas_nama'),
             'no_rekening' => $this->input->post('no_rekening'),
             'jenis_bank' => $this->input->post('jenis_bank'),
