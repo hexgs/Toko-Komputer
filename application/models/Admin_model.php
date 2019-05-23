@@ -79,6 +79,11 @@ class Admin_model extends CI_Model
         return $this->db->update('pelanggan', $data);
     }
 
+    public function getCountOrder(){
+        return $query = $this->db->query("SELECT COUNT(*)
+        FROM pembelian");
+    }
+
 
 
 
