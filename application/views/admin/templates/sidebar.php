@@ -40,13 +40,13 @@
           <i class="fa fa-users"></i>
           <span>User Management</span>
         </a>
-      </li>
+        <!-- </li>
       <li class="">
         <a href="<?= base_url() ?>admin/report">
           <i class="fa fa-book"></i>
           <span>Report</span>
         </a>
-      </li>
+      </li> -->
 
 
       <li class="header">SETTING</li>
