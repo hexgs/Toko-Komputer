@@ -63,3 +63,143 @@
 	<!-- /container -->
 </div>
 <!-- /SECTION -->
+
+
+<!-- SECTION -->
+<div class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+
+			<!-- section title -->
+			<div class="col-md-12">
+				<div class="section-title">
+					<h3 class="title">Top Selling</h3>
+					<div class="section-nav">
+					</div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			<!-- Products tab & slick -->
+			<div class="col-md-12">
+				<div class="row">
+					<div class="products-tabs">
+						<!-- tab -->
+						<div id="tab2" class="tab-pane fade in active">
+							<div class="products-slick" data-nav="#slick-nav-2">
+								<!-- product -->
+								<div class="product">
+									<div class="product-img">
+										<img src="<?= config_item('base_url()'); ?>assets/front/img/product06.png" alt="">
+									</div>
+									<div class="product-body">
+										<!-- <p class="product-category">Category</p> -->
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 </h4>
+
+										<div class="product-btns">
+											<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>produk';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+									</div>
+								</div>
+								<!-- /product -->
+
+								<!-- product -->
+								<div class="product">
+									<div class="product-img">
+										<img src="<?= config_item('base_url()'); ?>assets/front/img/product07.png" alt="">
+									</div>
+									<div class="product-body">
+										<!-- <p class="product-category">Category</p> -->
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 </h4>
+
+										<div class="product-btns">
+											<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>produk';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+									</div>
+								</div>
+								<!-- /product -->
+
+								<!-- product -->
+								<div class="product">
+									<div class="product-img">
+										<img src="<?= config_item('base_url()'); ?>assets/front/img/product08.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 </h4>
+
+										<div class="product-btns">
+											<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>produk';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+									</div>
+								</div>
+								<!-- /product -->
+
+								<!-- product -->
+								<div class="product">
+									<div class="product-img">
+										<img src="<?= config_item('base_url()'); ?>assets/front/img/product09.png" alt="">
+									</div>
+									<div class="product-body">
+										<!-- <p class="product-category">Category</p> -->
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 </h4>
+
+										<div class="product-btns">
+											<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>produk';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+									</div>
+								</div>
+								<!-- /product -->
+
+								<!-- product -->
+								<div class="product">
+									<div class="product-img">
+										<img src="<?= config_item('base_url()'); ?>assets/front/img/product01.png" alt="">
+									</div>
+									<div class="product-body">
+										<!-- <p class="product-category">Category</p> -->
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 </h4>
+
+										<div class="product-btns">
+											<button class="quick-view" onclick="window.location.href = '<?= base_url(); ?>produk';"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+									</div>
+								</div>
+								<!-- /product -->
+							</div>
+							<div id="slick-nav-2" class="products-slick-nav"></div>
+						</div>
+						<!-- /tab -->
+					</div>
+				</div>
+			</div>
+			<!-- /Products tab & slick -->
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /SECTION <-->
+</-->
