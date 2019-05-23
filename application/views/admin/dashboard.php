@@ -1,4 +1,4 @@
-<!-- <?php var_dump($pembelian); ?> -->
+<?php var_dump($pelanggan); ?>
 <?php 
   if($pembelian)
   {
