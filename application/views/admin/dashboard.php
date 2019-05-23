@@ -1,4 +1,4 @@
-<?php var_dump($pembelian); ?>
+<!-- <?php var_dump($pembelian); ?> -->
 <?php 
   if($pembelian)
   {
@@ -27,6 +27,10 @@
           <div class="small-box bg-green">
             <div class="inner">
               <h3>53<sup style="font-size: 20px">%</sup></h3>
+<?php
+  }
+}
+?>
 
               <p>User Registrations</p>
             </div>
@@ -38,7 +42,3 @@
         </div>
 
       </div>
-<?php
-  }
-}
-?>
