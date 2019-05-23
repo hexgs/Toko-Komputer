@@ -83,6 +83,13 @@ class Admin_model extends CI_Model
         // return $query = $this->db->query("SELECT COUNT(*)
         // FROM pembelian");
         $this->db->select('pembelian.id_pembelian, count(pembelian.id_pembelian) as total'); 
+        $query = $this->db->get('pembelian');
+        if($query->num_rows()>0)
+        {
+        return $query->result();
+        }
+        // return $this->db->get('pembelian')->result_array();
+
     }
 
     // function hitungDataAssetTiapKategori()
