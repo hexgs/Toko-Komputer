@@ -11,6 +11,7 @@ Class Home extends CI_Controller {
     public function index()
     {
         $data['pembelian'] = $this->Admin_model->getCountOrder();
+        $data['pelanggan'] = $this->Admin_model->getCountUser();
         $data['content'] = 'admin/dashboard';
         $data['judul'] = 'Dashboard';
         $data['title'] = 'Dashboard - Page';
