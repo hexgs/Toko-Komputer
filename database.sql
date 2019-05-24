@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2019 at 11:27 PM
+-- Generation Time: May 24, 2019 at 05:28 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `is_active` int(1) NOT NULL,
   `date_created` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `admin`
@@ -49,7 +49,8 @@ INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_
 (6, 'admin3', 'admin3@gmail.com', 'default.jpg', '$2y$10$6F4EQSlV3XzzCp/INJyEfO5miVQFOQpgsjlRDR98tHb.aaRxZ0hFC', 1, 1, 1552634564),
 (7, 'admin99', 'admin99@gmail.com', 'default.jpg', '$2y$10$Ho16p9V90o6fesCJvydfWORmtZuReOq3af99T4gFZbxcrMuXm0..C', 1, 1, 1552635954),
 (8, 'admin33', 'admin33@gmail.com', 'default.jpg', '$2y$10$yb8LJv.EeCs1p89nEMVuLO2Yj65J6HqIsYdRPf/AmzPugXTH9RfMS', 1, 1, 1552636067),
-(9, 'Irham Rizaldy', 'irhamrizaldy@gmail.com', 'default.jpg', '$2y$10$9Ci65lqG9/a24D.Eu2t.Ruen2Exi1CqFsrqzxbY.AaMjtdSkkqqyi', 1, 1, 1558637207);
+(9, 'Irham Rizaldy', 'irhamrizaldy@gmail.com', 'default.jpg', '$2y$10$9Ci65lqG9/a24D.Eu2t.Ruen2Exi1CqFsrqzxbY.AaMjtdSkkqqyi', 1, 1, 1558637207),
+(10, 'yoga', 'yoga@gmail.com', 'default.jpg', '$2y$10$DnGRHl7sHMrzB8ZOV15/PuHxpB5HYl43wFvMO1rYkxtUKPsueZHLO', 1, 1, 1558666194);
 
 -- --------------------------------------------------------
 
@@ -145,22 +146,25 @@ CREATE TABLE IF NOT EXISTS `pembelian` (
   `atas_nama` varchar(255) DEFAULT NULL,
   `no_rekening` int(11) NOT NULL,
   `jenis_bank` varchar(255) NOT NULL,
+  `status` int(11) NOT NULL,
   `total_transfer` int(11) NOT NULL,
   PRIMARY KEY (`id_pembelian`),
   KEY `id_ongkir` (`id_ongkir`),
   KEY `id_pelanggan` (`id_pelanggan`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=107 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=109 ;
 
 --
 -- Dumping data for table `pembelian`
 --
 
-INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `atas_nama`, `no_rekening`, `jenis_bank`, `total_transfer`) VALUES
-(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
-(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
-(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 2432424),
-(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, '0', 2432424),
-(106, 11, 1, '2019-05-23', 6500000, '', 'Wibu', 1741720103, 'BNI', 0);
+INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `atas_nama`, `no_rekening`, `jenis_bank`, `status`, `total_transfer`) VALUES
+(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 0, 2432424),
+(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 0, 2432424),
+(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 0, 2432424),
+(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, '0', 0, 2432424),
+(106, 11, 1, '2019-05-23', 6500000, '', 'Wibu', 1741720103, 'BNI', 0, 0),
+(107, 10, 1, '2019-05-24', 24500000, 'soroako', 'yogaibnu', 173737373, 'bca', 0, 2599999),
+(108, 10, 1, '2019-05-24', 2200000, 'malang', 'yogaibnu', 1212121212, 'bca', 0, 242423);
 
 -- --------------------------------------------------------
 
@@ -195,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `produk` (
   `deskripsi` text NOT NULL,
   PRIMARY KEY (`id_produk`),
   KEY `id_kategori` (`id_kategori`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
 -- Dumping data for table `produk`
