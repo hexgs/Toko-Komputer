@@ -37,7 +37,7 @@ class Transaction extends CI_Controller
         $data['pembelian'] = $this->Admin_model->getTscById($id);
         $data['title'] = 'Transaction - Page';
         $data['judul'] = 'Detail Transaksi';
-        $data['content'] = 'admin/detailtransaksi';
+        $data['content'] = 'admin/detailTransaksi';
         $this->load->view('admin/templates/index', $data);
     }
 
