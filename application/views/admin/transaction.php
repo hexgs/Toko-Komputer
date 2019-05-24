@@ -40,14 +40,16 @@
 								</td>
 								<td>
 									<?php
-									$status = $tsc['total_transfer'];
-									if ($status > 0) {
+									$statusTsc = $tsc['statusTsc'];
+									if ($statusTsc == 1) {
 										?>
-										<a class="btn btn-success">Complete</a>
+										<a href="transaction/updatestatustsc?id=<?php echo $tsc['id_pembelian']; ?>&val=<?php echo $tsc['statusTsc']; ?>" class="btn btn-success">Complete</a>
 									<?php
 								} else {
 									?>
-										<a class="btn btn-danger">Pending</a>
+										<!-- <a class="btn btn-danger">Pending</a> -->
+										<a href="transaction/updatestatustsc?id=<?php echo $tsc['id_pembelian']; ?>&val=<?php echo $tsc['statusTsc']; ?>" class="btn btn-danger">Pending</a>
+
 									<?php
 								} ?>
 								</td>

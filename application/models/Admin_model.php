@@ -79,6 +79,24 @@ class Admin_model extends CI_Model
         return $this->db->update('pelanggan', $data);
     }
 
+    public function updateStatusTsc()
+    {
+        $id = $_REQUEST['id'];
+        $vals = $_REQUEST['val'];
+
+        if ($vals == 1) {
+            $statusTsc = 0;
+        } else {
+            $statusTsc = 1;
+        }
+
+        $data = array(
+            'statusTsc' => $statusTsc
+        );
+        $this->db->where('id_pembelian', $id);
+        return $this->db->update('pembelian', $data);
+    }
+
     public function getCountOrder()
     {
         $this->db->select('pembelian.id_pembelian, count(pembelian.id_pembelian) as total');
