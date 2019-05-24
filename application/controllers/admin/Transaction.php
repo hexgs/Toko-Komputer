@@ -40,4 +40,22 @@ class Transaction extends CI_Controller
         $data['content'] = 'admin/detailtransaksi';
         $this->load->view('admin/templates/index', $data);
     }
+
+    public function updateStatusTsc()
+    {
+        if (isset($_REQUEST['val'])) {
+            $this->load->model('Admin_model', 'pembelian');
+
+            $up_stat = $this->pembelian->updateStatusTsc();
+
+            if ($up_stat > 0) {
+                $this->session->set_flashdata('msg', 'Transaksi Data Updated Successfully!');
+                $this->session->set_flashdata('msg_class', 'alert-success');
+            } else {
+                $this->session->set_flashdata('msg', 'Transaksi Data not Updated Successfully!');
+                $this->session->set_flashdata('msg_class', 'alert-danger');
+            }
+            return redirect('admin/transaction');
+        }
+    }
 }
