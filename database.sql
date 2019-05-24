@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2019 at 05:28 AM
+-- Generation Time: May 24, 2019 at 07:47 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -146,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `pembelian` (
   `atas_nama` varchar(255) DEFAULT NULL,
   `no_rekening` int(11) NOT NULL,
   `jenis_bank` varchar(255) NOT NULL,
-  `status` int(11) NOT NULL,
+  `statusTsc` int(11) NOT NULL,
   `total_transfer` int(11) NOT NULL,
   PRIMARY KEY (`id_pembelian`),
   KEY `id_ongkir` (`id_ongkir`),
@@ -157,14 +157,14 @@ CREATE TABLE IF NOT EXISTS `pembelian` (
 -- Dumping data for table `pembelian`
 --
 
-INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `atas_nama`, `no_rekening`, `jenis_bank`, `status`, `total_transfer`) VALUES
-(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 0, 2432424),
-(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 0, 2432424),
-(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 0, 2432424),
-(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, '0', 0, 2432424),
-(106, 11, 1, '2019-05-23', 6500000, '', 'Wibu', 1741720103, 'BNI', 0, 0),
-(107, 10, 1, '2019-05-24', 24500000, 'soroako', 'yogaibnu', 173737373, 'bca', 0, 2599999),
-(108, 10, 1, '2019-05-24', 2200000, 'malang', 'yogaibnu', 1212121212, 'bca', 0, 242423);
+INSERT INTO `pembelian` (`id_pembelian`, `id_pelanggan`, `id_ongkir`, `tanggal_pembelian`, `total_pembelian`, `alamat`, `atas_nama`, `no_rekening`, `jenis_bank`, `statusTsc`, `total_transfer`) VALUES
+(101, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 1, 2432424),
+(102, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 1, 2432424),
+(103, 10, 1, '2019-05-23', 0, 'surabaya', 'yogaibnu', 1212121212, '0', 1, 2432424),
+(104, 10, 1, '2019-05-23', 24500000, 'darjo', 'yogaibnu', 1212121212, '0', 1, 2432424),
+(106, 11, 1, '2019-05-23', 6500000, '', 'Wibu', 1741720103, 'BNI', 1, 0),
+(107, 10, 1, '2019-05-24', 24500000, 'soroako', 'yogaibnu', 173737373, 'bca', 1, 2599999),
+(108, 10, 1, '2019-05-24', 2200000, 'malang', 'yogaibnu', 1212121212, 'bca', 1, 242423);
 
 -- --------------------------------------------------------
 
