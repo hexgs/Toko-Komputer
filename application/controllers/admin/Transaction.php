@@ -43,7 +43,7 @@ class Transaction extends CI_Controller
 
     public function updateStatusTsc()
     {
-        if (isset($_GET['val'])) {
+        if (isset($_POST['val'])) {
             $this->load->model('Admin_model', 'pembelian');
 
             $up_stat = $this->pembelian->updateStatusTsc();
